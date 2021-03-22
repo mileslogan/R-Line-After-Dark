@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D18E7E1E-DCB6-49A7-8222-43DA8C2CC13F}" SchemaVersion="97">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{D18E7E1E-DCB6-49A7-8222-43DA8C2CC13F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="MusicMeter" ID="{ABCB8551-5EA3-42F2-8A12-DE3A72C33145}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="MusicMeter" ID="{CDF24ECF-CF51-4157-9F4D-0120E6943486}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

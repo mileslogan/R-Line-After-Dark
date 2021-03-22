@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1268211518" Language="SFX" Hash="2740608438">
+			<ObjectPath>\SoundBanks\Default Work Unit\NoteHighway</ObjectPath>
+			<ShortName>NoteHighway</ShortName>
+			<Path>NoteHighway.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1221274415" Name="FallSound" ObjectPath="\Events\Default Work Unit\FallSound" DurationType="OneShot" DurationMin="0.795488" DurationMax="0.795488">
+					<IncludedMemoryFiles>
+						<File Id="1037792397" Language="SFX">
+							<ShortName>sfx_sounds_falling1.wav</ShortName>
+							<Path>SFX/sfx_sounds_falling1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1000191198" Name="JumpSound" ObjectPath="\Events\Default Work Unit\JumpSound" DurationType="OneShot" DurationMin="0.139864" DurationMax="0.139864">
+					<IncludedMemoryFiles>
+						<File Id="563557586" Language="SFX">
+							<ShortName>sfx_movement_jump20.wav</ShortName>
+							<Path>SFX/sfx_movement_jump20_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="377537405" Name="PlayNoteHighwayMusic" ObjectPath="\Events\Default Work Unit\PlayNoteHighwayMusic" DurationType="OneShot" DurationMin="135.137939" DurationMax="135.137939">
+					<IncludedMemoryFiles>
+						<File Id="881191192" Language="SFX">
+							<ShortName>08 Two Bit Boss Battles.wav</ShortName>
+							<Path>SFX/08 Two Bit Boss Battles_696A9007.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2897602606" Name="PlayRhythmHeckinMusic" ObjectPath="\Events\Default Work Unit\PlayRhythmHeckinMusic" DurationType="OneShot" DurationMin="83.000000" DurationMax="83.000000">
+					<IncludedMemoryFiles>
+						<File Id="846284797" Language="SFX">
+							<ShortName>RhythmTrainAfterDark.wav</ShortName>
+							<Path>SFX/RhythmTrainAfterDark_696A9007.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3188186427" Name="StopNoteHighwayMusic" ObjectPath="\Events\Default Work Unit\StopNoteHighwayMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3304723600" Name="StopRhythmHeckinMusic" ObjectPath="\Events\Default Work Unit\StopRhythmHeckinMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="839091913">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

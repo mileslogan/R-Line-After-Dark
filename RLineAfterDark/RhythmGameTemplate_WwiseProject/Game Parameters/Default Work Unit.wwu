@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{660A95BE-E4F6-4AD4-B093-FA9E3B67E008}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{660A95BE-E4F6-4AD4-B093-FA9E3B67E008}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="MusicMeter" ID="{CDF24ECF-CF51-4157-9F4D-0120E6943486}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
