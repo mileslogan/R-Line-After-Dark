@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/RhythmGameTemplate2/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1268211518" Language="SFX" Hash="2740608438">
+		<SoundBank Id="1268211518" Language="SFX" Hash="3603031892">
 			<ObjectPath>\SoundBanks\Default Work Unit\NoteHighway</ObjectPath>
 			<ShortName>NoteHighway</ShortName>
 			<Path>NoteHighway.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4251951826" Name="EricTrack1" ObjectPath="\Events\Default Work Unit\EricTrack1" DurationType="OneShot" DurationMin="82.559998" DurationMax="82.559998">
+					<IncludedMemoryFiles>
+						<File Id="957468146" Language="SFX">
+							<ShortName>track 1 125bpm no kick.wav</ShortName>
+							<Path>SFX/track 1 125bpm no kick_696A9007.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1221274415" Name="FallSound" ObjectPath="\Events\Default Work Unit\FallSound" DurationType="OneShot" DurationMin="0.795488" DurationMax="0.795488">
 					<IncludedMemoryFiles>
 						<File Id="1037792397" Language="SFX">
@@ -42,9 +50,17 @@
 				</Event>
 				<Event Id="2897602606" Name="PlayRhythmHeckinMusic" ObjectPath="\Events\Default Work Unit\PlayRhythmHeckinMusic" DurationType="OneShot" DurationMin="83.000000" DurationMax="83.000000">
 					<IncludedMemoryFiles>
+						<File Id="460615611" Language="SFX">
+							<ShortName>track 2 100bpm no kick.wav</ShortName>
+							<Path>SFX/track 2 100bpm no kick_696A9007.wem</Path>
+						</File>
 						<File Id="846284797" Language="SFX">
 							<ShortName>RhythmTrainAfterDark.wav</ShortName>
 							<Path>SFX/RhythmTrainAfterDark_696A9007.wem</Path>
+						</File>
+						<File Id="957468146" Language="SFX">
+							<ShortName>track 1 125bpm no kick.wav</ShortName>
+							<Path>SFX/track 1 125bpm no kick_696A9007.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

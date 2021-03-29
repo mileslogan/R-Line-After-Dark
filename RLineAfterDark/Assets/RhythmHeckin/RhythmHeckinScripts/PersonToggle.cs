@@ -11,6 +11,7 @@ public class Person
     public int windowEnd;
     public int windowStartMissed;
     public int windowEndMissed;
+    public int personSpriteNum;
 }
 
 public class PersonToggle : MonoBehaviour
@@ -33,6 +34,10 @@ public class PersonToggle : MonoBehaviour
 
     public ParticleSystem[] stationParticles;
 
+    public Sprite[] personSprites;
+
+
+
     
 
     // Start is called before the first frame update
@@ -44,40 +49,53 @@ public class PersonToggle : MonoBehaviour
         currentcombo = 0;
         scoreText.text = "Score: " + score;
         comboText.text = "Combo: " + currentcombo;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(passengerQueue.Count > 0)
+        if (passengerQueue.Count > 0)
         {
             int currentTime = RhythmHeckinWwiseSync.GetMusicTimeInMS();
             Person nextPerson = passengerQueue.Peek();
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+            KeyCode correctInput = GameManager.inputs[nextPerson.personSpriteNum];
+                
                 if(nextPerson.windowStart < currentTime && nextPerson.windowEnd > currentTime)
                 {
-                    GoodPress();
-                    stationParticles[nextPerson.personIndex].Play();
-                    TogglePerson(nextPerson.personIndex, false);
-                    passengerQueue.Dequeue();
+                    if (Input.GetKeyDown(correctInput))
+                    {
+                        GoodPress();
+                        stationParticles[nextPerson.personIndex].Play();
+                        TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                        passengerQueue.Dequeue();
+                        return;
+                    }
+                    else if(Input.GetKeyDown(GameManager.inputs[0]) ||
+                            Input.GetKeyDown(GameManager.inputs[1]) ||
+                            Input.GetKeyDown(GameManager.inputs[2]) ||
+                            Input.GetKeyDown(GameManager.inputs[3]) ||
+                            Input.GetKeyDown(GameManager.inputs[4]))
+                    {
+                        BadPress();
+                        Debug.Log("WrongInput");
+                        TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                        passengerQueue.Dequeue();
+                    }
+                    
                 }
                 else if(nextPerson.windowStartMissed < currentTime)
                 {
                     BadPress();
                     Debug.Log("Too Early!!!");
-                    TogglePerson(nextPerson.personIndex, false);
+                    TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
                     passengerQueue.Dequeue();
                 }
-            }
 
             if(currentTime > nextPerson.windowEnd)
             {
                 BadPress();
                 Debug.Log("Too Late!!!");
-                TogglePerson(nextPerson.personIndex, false);
+                TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
                 passengerQueue.Dequeue();
             }
         }
@@ -92,13 +110,15 @@ public class PersonToggle : MonoBehaviour
         }
     }
 
-    public void TogglePerson(int person, bool on)
+    public void TogglePerson(int person, bool on, int pickup)
     {
+        people[person].sprite = personSprites[pickup];
         people[person].enabled = on;
         if (on)
         {
             Person newPerson = new Person();
             newPerson.personIndex = person;
+            newPerson.personSpriteNum = pickup;
             newPerson.windowStart = (RhythmHeckinWwiseSync.GetMusicTimeInMS() + Mathf.RoundToInt(offset * RhythmHeckinWwiseSync.secondsPerBeat * 1000) - goodWindow / 2);
             newPerson.windowEnd = newPerson.windowStart + goodWindow;
             newPerson.windowStartMissed = (RhythmHeckinWwiseSync.GetMusicTimeInMS() + Mathf.RoundToInt(offset * RhythmHeckinWwiseSync.secondsPerBeat * 1000) - missedTime / 2);

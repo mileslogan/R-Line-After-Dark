@@ -5,13 +5,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	2897602606	PlayRhythmHeckinMusic			\Default Work Unit\PlayRhythmHeckinMusic	
 	3188186427	StopNoteHighwayMusic			\Default Work Unit\StopNoteHighwayMusic	
 	3304723600	StopRhythmHeckinMusic			\Default Work Unit\StopRhythmHeckinMusic	
+	4251951826	EricTrack1			\Default Work Unit\EricTrack1	
 
 Effect plug-ins	ID	Name	Type				Notes
 	2562106129	MusicMeter	Wwise Meter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	563557586	sfx_movement_jump20	Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\sfx_movement_jump20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_movement_jump20		12400
-	846284797	music	Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\RhythmTrainAfterDark_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\RhythmHeckinMusic\Midnight Train\music		851936
-	881191192	08 Two Bit Boss Battles	Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\08 Two Bit Boss Battles_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\DistractingRhythmGame\RhythmGameTemplateMusic\08 Two Bit Boss Battles		1833809
-	1037792397	sfx_sounds_falling1	Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\sfx_sounds_falling1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_sounds_falling1		70226
+	460615611	track 2 100bpm	Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 2 100bpm no kick_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\RhythmHeckinMusic\Track 2\track 2 100bpm		1024334
+	563557586	sfx_movement_jump20	Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\sfx_movement_jump20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_movement_jump20		12400
+	846284797	music	Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\RhythmTrainAfterDark_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\RhythmHeckinMusic\Midnight Train\music		851936
+	881191192	08 Two Bit Boss Battles	Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\08 Two Bit Boss Battles_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\DistractingRhythmGame\RhythmGameTemplateMusic\08 Two Bit Boss Battles		1833809
+	957468146	track 1 125bpm	Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 1 125bpm no kick_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\RhythmHeckinMusic\Track 1\track 1 125bpm		902359
+	1037792397	sfx_sounds_falling1	Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\sfx_sounds_falling1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_sounds_falling1		70226
 

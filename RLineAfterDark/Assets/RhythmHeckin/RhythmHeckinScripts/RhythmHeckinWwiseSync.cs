@@ -21,7 +21,7 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
     public UnityEvent OnEveryBeat;
     public UnityEvent OnEveryBar;
     public UnityEvent OnSongStart;
-    public static Action<int, bool> TogglePerson;
+    public static Action<int, bool, int> TogglePerson;
 
     
 
@@ -86,53 +86,101 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
             case "StartSong":
                 OnSongStart.Invoke();
                 break;
-            case "0":
-                TogglePerson.Invoke(0, true);
+            case "0p":
+                TogglePerson.Invoke(0, true, 0);
                 break;
-            case "1":
-                TogglePerson.Invoke(1, true);
+            case "1p":
+                TogglePerson.Invoke(1, true, 0);
                 break;
-            case "2":
-                TogglePerson.Invoke(2, true);
+            case "2p":
+                TogglePerson.Invoke(2, true, 0);
                 break;
-            case "3":
-                TogglePerson.Invoke(3, true);
+            case "3p":
+                TogglePerson.Invoke(3, true, 0);
                 break;
-            case "4":
-                TogglePerson.Invoke(4, true);
+            case "4p":
+                TogglePerson.Invoke(4, true, 0);
                 break;
-            case "5":
-                TogglePerson.Invoke(5, true);
+            case "5p":
+                TogglePerson.Invoke(5, true, 0);
                 break;
-            case "6":
-                TogglePerson.Invoke(6, true);
+            case "6p":
+                TogglePerson.Invoke(6, true, 0);
                 break;
-            case "7":
-                TogglePerson.Invoke(7, true);
+            case "7p":
+                TogglePerson.Invoke(7, true, 0);
                 break;
-            case "8":
-                TogglePerson.Invoke(8, true);
+            case "8p":
+                TogglePerson.Invoke(8, true, 0);
                 break;
-            case "9":
-                TogglePerson.Invoke(9, true);
+            case "9p":
+                TogglePerson.Invoke(9, true, 0);
                 break;
-            case "10":
-                TogglePerson.Invoke(10, true);
+            case "10p":
+                TogglePerson.Invoke(10, true, 0);
                 break;
-            case "11":
-                TogglePerson.Invoke(11, true);
+            case "11p":
+                TogglePerson.Invoke(11, true, 0);
                 break;
-            case "12":
-                TogglePerson.Invoke(12, true);
+            case "12p":
+                TogglePerson.Invoke(12, true, 0);
                 break;
-            case "13":
-                TogglePerson.Invoke(13, true);
+            case "13p":
+                TogglePerson.Invoke(13, true, 0);
                 break;
-            case "14":
-                TogglePerson.Invoke(14, true);
+            case "14p":
+                TogglePerson.Invoke(14, true, 0);
                 break;
-            case "15":
-                TogglePerson.Invoke(15, true);
+            case "15p":
+                TogglePerson.Invoke(15, true, 0);
+                break;
+            case "0d":
+                TogglePerson.Invoke(0, true, 1);
+                break;
+            case "1d":
+                TogglePerson.Invoke(1, true, 1);
+                break;
+            case "2d":
+                TogglePerson.Invoke(2, true, 1);
+                break;
+            case "3d":
+                TogglePerson.Invoke(3, true, 1);
+                break;
+            case "4d":
+                TogglePerson.Invoke(4, true, 2);
+                break;
+            case "5d":
+                TogglePerson.Invoke(5, true, 2);
+                break;
+            case "6d":
+                TogglePerson.Invoke(6, true, 2);
+                break;
+            case "7d":
+                TogglePerson.Invoke(7, true, 2);
+                break;
+            case "8d":
+                TogglePerson.Invoke(8, true, 3);
+                break;
+            case "9d":
+                TogglePerson.Invoke(9, true, 3);
+                break;
+            case "10d":
+                TogglePerson.Invoke(10, true, 3);
+                break;
+            case "11d":
+                TogglePerson.Invoke(11, true, 3);
+                break;
+            case "12d":
+                TogglePerson.Invoke(12, true, 4);
+                break;
+            case "13d":
+                TogglePerson.Invoke(13, true, 4);
+                break;
+            case "14d":
+                TogglePerson.Invoke(14, true, 4);
+                break;
+            case "15d":
+                TogglePerson.Invoke(15, true, 4);
                 break;
             default:
                 break;
