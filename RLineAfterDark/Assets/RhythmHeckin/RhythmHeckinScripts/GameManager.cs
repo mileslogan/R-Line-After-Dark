@@ -26,8 +26,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         primaryInput = true;
-        gameMode = 1;
+        gameMode = 0;
         trackNum = 0;
+
+        //TEMP
+        inputs = modeOnePrimary;
+
     }
 
     // Update is called once per frame

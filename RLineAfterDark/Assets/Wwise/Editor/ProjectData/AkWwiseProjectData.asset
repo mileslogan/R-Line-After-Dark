@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6de5eaaec14eeb48818adbb4695ce2e1
     GuidInternal: 
-    m_lastTime: -8585846376294775808
+    m_lastTime: -8585844931544775808
     List:
     - name: EricTrack1
       guid: 58dc4df916e4574fb0bad0a5121d951e
@@ -91,8 +91,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/EricTrack1
       maxAttenuation: 0
-      maxDuration: 82.56
-      minDuration: 82.56
+      maxDuration: 86.16
+      minDuration: 86.16
     - name: FallSound
       guid: f7f8447185d2be42b387c4d54e3e99d0
       id: 1221274415
@@ -139,8 +139,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/PlayRhythmHeckinMusic
       maxAttenuation: 0
-      maxDuration: 83
-      minDuration: 83
+      maxDuration: 0
+      minDuration: 0
     - name: StopNoteHighwayMusic
       guid: 8a022565b158ef4193f049886f0fd62f
       id: 3188186427
@@ -216,5 +216,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /RhythmGameTemplate_WwiseProject
+  - /RhythmGameTemplate_WwiseProject/Events
+  - /RhythmGameTemplate_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

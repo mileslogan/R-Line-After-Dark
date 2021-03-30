@@ -82,7 +82,7 @@ public class ObstacleMove : MonoBehaviour {
 
 	public void StartMoving()
     {
-		currentStop = 15;
+		currentStop = 0;
 
 		initLocation = transform.position;
 		destination = stops[(currentStop + 1) % stops.Length].position;

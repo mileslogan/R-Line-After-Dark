@@ -49,6 +49,7 @@ public class PersonToggle : MonoBehaviour
         currentcombo = 0;
         scoreText.text = "Score: " + score;
         comboText.text = "Combo: " + currentcombo;
+        missedTime = Mathf.RoundToInt((RhythmHeckinWwiseSync.secondsPerBeat * 1000));
     }
 
     // Update is called once per frame
@@ -59,37 +60,39 @@ public class PersonToggle : MonoBehaviour
             int currentTime = RhythmHeckinWwiseSync.GetMusicTimeInMS();
             Person nextPerson = passengerQueue.Peek();
             KeyCode correctInput = GameManager.inputs[nextPerson.personSpriteNum];
-                
-                if(nextPerson.windowStart < currentTime && nextPerson.windowEnd > currentTime)
+
+            if (Input.GetKeyDown(correctInput))
+            {
+
+
+                if (nextPerson.windowStart < currentTime && nextPerson.windowEnd > currentTime)
                 {
-                    if (Input.GetKeyDown(correctInput))
-                    {
+                    
                         GoodPress();
                         stationParticles[nextPerson.personIndex].Play();
                         TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
                         passengerQueue.Dequeue();
-                        return;
-                    }
-                    else if(Input.GetKeyDown(GameManager.inputs[0]) ||
-                            Input.GetKeyDown(GameManager.inputs[1]) ||
-                            Input.GetKeyDown(GameManager.inputs[2]) ||
-                            Input.GetKeyDown(GameManager.inputs[3]) ||
-                            Input.GetKeyDown(GameManager.inputs[4]))
-                    {
-                        BadPress();
-                        Debug.Log("WrongInput");
-                        TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
-                        passengerQueue.Dequeue();
-                    }
-                    
+                    //else if(Input.GetKeyDown(GameManager.inputs[0]) ||
+                    //        Input.GetKeyDown(GameManager.inputs[1]) ||
+                    //        Input.GetKeyDown(GameManager.inputs[2]) ||
+                    //        Input.GetKeyDown(GameManager.inputs[3]) ||
+                    //        Input.GetKeyDown(GameManager.inputs[4]))
+                    //{
+                    //    BadPress();
+                    //    Debug.Log("WrongInput");
+                    //    TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                    //    passengerQueue.Dequeue();
+                    //}
+
                 }
-                else if(nextPerson.windowStartMissed < currentTime)
+                else if (nextPerson.windowStartMissed < currentTime)
                 {
                     BadPress();
                     Debug.Log("Too Early!!!");
                     TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
                     passengerQueue.Dequeue();
                 }
+            }
 
             if(currentTime > nextPerson.windowEnd)
             {

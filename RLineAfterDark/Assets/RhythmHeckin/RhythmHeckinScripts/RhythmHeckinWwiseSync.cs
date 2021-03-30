@@ -28,9 +28,9 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
     //id of the wwise event - using this to get the playback position
     static uint playingID;
 
-    void Start()
+    IEnumerator Start()
     {
-
+        yield return new WaitForSeconds(5);
         playingID = rhythmHeckinEvent.Post(gameObject, (uint)(AkCallbackType.AK_MusicSyncAll | AkCallbackType.AK_EnableGetMusicPlayPosition), MusicCallbackFunction);
 
     }
