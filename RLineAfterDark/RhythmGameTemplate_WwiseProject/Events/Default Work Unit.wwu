@@ -86,6 +86,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="EricTrack2" ID="{34762F82-68E1-4920-ABCB-775A81F4C222}">
+					<ChildrenList>
+						<Action Name="" ID="{B0A42EC5-742D-42BC-8EBF-EAB20B6BDA95}" ShortID="15159078">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Track 2" ID="{8EB035BD-8894-4E10-81CA-94912DCEC2A7}" WorkUnitID="{5142D0E9-31DD-4B24-9FFE-8C6ACB1EFCDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EricTrack3" ID="{2515A5F4-B3F1-4BE2-97DD-D268C0D53015}">
+					<ChildrenList>
+						<Action Name="" ID="{A90C6010-7D2E-4918-BCAC-DDDDFD1FE83C}" ShortID="88303085">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Track 3" ID="{133BC4AB-ADF7-43BE-BC2A-CC42815AA8ED}" WorkUnitID="{5142D0E9-31DD-4B24-9FFE-8C6ACB1EFCDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UserKick" ID="{3B6E6E4B-0E32-4D62-8854-FEEC711992B5}">
+					<ChildrenList>
+						<Action Name="" ID="{4CF79267-E8AF-475E-ACB2-811AB93C1214}" ShortID="756498376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UserKick" ID="{A858B49E-D399-44E3-8C8B-EF3D734BFFA8}" WorkUnitID="{5142D0E9-31DD-4B24-9FFE-8C6ACB1EFCDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GoodKickEvent" ID="{34ED5629-5D52-44A0-A214-43A3AA04A07D}">
+					<ChildrenList>
+						<Action Name="" ID="{97B77F5B-93A8-428B-BBDF-77565C94DADE}" ShortID="1008567827">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoodKick" ID="{A8493B89-02EB-4395-A70A-8B6A6E81B37D}" WorkUnitID="{5142D0E9-31DD-4B24-9FFE-8C6ACB1EFCDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MissKick" ID="{A435757A-AEE2-455F-A34A-E64D371330E9}">
+					<ChildrenList>
+						<Action Name="" ID="{CEEED347-5A2F-41EE-978C-A4CCEC485DBB}" ShortID="714060722">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MissSound" ID="{B08F90A5-697E-4423-B6FD-8C3221417D38}" WorkUnitID="{5142D0E9-31DD-4B24-9FFE-8C6ACB1EFCDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

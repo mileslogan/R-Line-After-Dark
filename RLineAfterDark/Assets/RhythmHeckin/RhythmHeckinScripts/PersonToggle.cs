@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class Person
 {
     public int personIndex;
@@ -11,6 +12,8 @@ public class Person
     public int windowEnd;
     public int windowStartMissed;
     public int windowEndMissed;
+    public int perfWindowStart;
+    public int perfWindowEnd;
     public int personSpriteNum;
 }
 
@@ -18,14 +21,16 @@ public class PersonToggle : MonoBehaviour
 {
     int score;
     int currentcombo;
+    int currentPerfCombo;
 
-    public Text scoreText, comboText;
+    public Text scoreText, comboText, currentRoute;
 
     public SpriteRenderer[] people;
-    Queue<Person> passengerQueue;
+    //Queue<Person> passengerQueue;
+    public List<Person> passengerList;
     int offset = 6;
 
-    public int perfectWindow = 50;
+    public int perfectWindow = 75;
     public int goodWindow = 100;
     public int missedTime = 200;
 
@@ -36,70 +41,81 @@ public class PersonToggle : MonoBehaviour
 
     public Sprite[] personSprites;
 
+    public AK.Wwise.Event goodSound, perfSound, missSound;
+
+    public GameObject scoreObject, comboObject, circleObject, inicatorObject, loadingObject;
 
 
-    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        scoreObject.SetActive(false); comboObject.SetActive(false); circleObject.SetActive(false); inicatorObject.SetActive(false);
+        loadingObject.SetActive(true);
+
         RhythmHeckinWwiseSync.TogglePerson += TogglePerson;
-        passengerQueue = new Queue<Person>();
+        //passengerQueue = new Queue<Person>();
+        passengerList = new List<Person>();
         score = 0;
         currentcombo = 0;
         scoreText.text = "Score: " + score;
         comboText.text = "Combo: " + currentcombo;
         missedTime = Mathf.RoundToInt((RhythmHeckinWwiseSync.secondsPerBeat * 1000));
+        personSprites = GameManager.sprites;
+        currentRoute.text = GameManager.trackNames[GameManager.trackNum];
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (passengerQueue.Count > 0)
+        if (//passengerQueue.Count > 0
+            passengerList.Count > 0)
         {
             int currentTime = RhythmHeckinWwiseSync.GetMusicTimeInMS();
-            Person nextPerson = passengerQueue.Peek();
+            //Person nextPerson = passengerQueue.Peek();
+            Person nextPerson = passengerList[0];
             KeyCode correctInput = GameManager.inputs[nextPerson.personSpriteNum];
 
             if (Input.GetKeyDown(correctInput))
             {
 
-
-                if (nextPerson.windowStart < currentTime && nextPerson.windowEnd > currentTime)
+                if (nextPerson.perfWindowStart < currentTime && nextPerson.perfWindowEnd > currentTime)
+                {
+                    PerfectPress();
+                    stationParticles[nextPerson.personIndex].Play();
+                    TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                    //passengerQueue.Dequeue();
+                    passengerList.Remove(nextPerson);
+                }
+                else if (nextPerson.windowStart < currentTime && nextPerson.windowEnd > currentTime)
                 {
                     
                         GoodPress();
                         stationParticles[nextPerson.personIndex].Play();
                         TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
-                        passengerQueue.Dequeue();
-                    //else if(Input.GetKeyDown(GameManager.inputs[0]) ||
-                    //        Input.GetKeyDown(GameManager.inputs[1]) ||
-                    //        Input.GetKeyDown(GameManager.inputs[2]) ||
-                    //        Input.GetKeyDown(GameManager.inputs[3]) ||
-                    //        Input.GetKeyDown(GameManager.inputs[4]))
-                    //{
-                    //    BadPress();
-                    //    Debug.Log("WrongInput");
-                    //    TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
-                    //    passengerQueue.Dequeue();
-                    //}
+                        //passengerQueue.Dequeue();
+                        passengerList.Remove(nextPerson);
 
                 }
                 else if (nextPerson.windowStartMissed < currentTime)
                 {
-                    BadPress();
+                    BadPress(true);
                     Debug.Log("Too Early!!!");
                     TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
-                    passengerQueue.Dequeue();
+                    //passengerQueue.Dequeue();
+                    passengerList.Remove(nextPerson);
                 }
             }
 
             if(currentTime > nextPerson.windowEnd)
             {
-                BadPress();
+                BadPress(false);
                 Debug.Log("Too Late!!!");
                 TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
-                passengerQueue.Dequeue();
+                //passengerQueue.Dequeue();
+                passengerList.Remove(nextPerson);
             }
         }
 
@@ -126,9 +142,12 @@ public class PersonToggle : MonoBehaviour
             newPerson.windowEnd = newPerson.windowStart + goodWindow;
             newPerson.windowStartMissed = (RhythmHeckinWwiseSync.GetMusicTimeInMS() + Mathf.RoundToInt(offset * RhythmHeckinWwiseSync.secondsPerBeat * 1000) - missedTime / 2);
             newPerson.windowEndMissed = newPerson.windowStartMissed + missedTime;
+            newPerson.perfWindowStart = (RhythmHeckinWwiseSync.GetMusicTimeInMS() + Mathf.RoundToInt(offset * RhythmHeckinWwiseSync.secondsPerBeat * 1000) - perfectWindow / 2);
+            newPerson.perfWindowEnd = newPerson.windowStart + perfectWindow;
 
 
-            passengerQueue.Enqueue(newPerson);
+            //passengerQueue.Enqueue(newPerson);
+            passengerList.Add(newPerson);
         }
     }
 
@@ -139,17 +158,55 @@ public class PersonToggle : MonoBehaviour
 
     void GoodPress()
     {
+        goodSound.Post(gameObject);
         currentcombo += 1;
+        currentPerfCombo = 0;
         score += 250 + (10 * (currentcombo - 1));
-        feedbackRenderer.sprite = feedbackSprite[0];
+        feedbackRenderer.sprite = feedbackSprite[1];
+        feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         scoreText.text = "Score: " + score;
         comboText.text = "Combo: " + currentcombo;
     }
 
-    void BadPress()
+    void BadPress(bool playSound)
     {
+        if (playSound)
+        {
+            missSound.Post(gameObject);
+        }
         currentcombo = 0;
-        feedbackRenderer.sprite = feedbackSprite[1];
+        currentPerfCombo = 0;
+        feedbackRenderer.sprite = feedbackSprite[2];
+        feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         comboText.text = "Combo: " + currentcombo;
     }
+
+    void PerfectPress()
+    {
+        perfSound.Post(gameObject);
+        currentcombo += 1;
+        currentPerfCombo += 1;
+        score += 400 + (10 * (currentcombo - 1)) + (20 * (currentPerfCombo - 1));
+        feedbackRenderer.sprite = feedbackSprite[0];
+        feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
+        scoreText.text = "Score: " + score;
+        comboText.text = "Combo: " + currentcombo;
+    }
+
+    public void ToPostGame()
+    {
+        GameManager.recentScore = score;
+        GameManager.ChangeScene(4);
+    }
+
+    public void Loaded()
+    {
+        scoreObject.SetActive(true); comboObject.SetActive(true); circleObject.SetActive(true); inicatorObject.SetActive(true);
+        loadingObject.SetActive(false);
+    }
+
+    //IEnumerator FadeCombo()
+    //{
+    //    yield return null;
+    //}
 }

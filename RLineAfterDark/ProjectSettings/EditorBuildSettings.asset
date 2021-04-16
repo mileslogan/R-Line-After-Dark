@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RhythmHeckin/RhythmHeckinScenes/GameScene.unity
     guid: 30d7c6b3227e04a6a8ee8b802d348af2
+  - enabled: 1
+    path: Assets/RhythmHeckin/RhythmHeckinScenes/PostGameScene.unity
+    guid: 0b27cefceace548fc8d8ea688b24d284
   m_configObjects: {}

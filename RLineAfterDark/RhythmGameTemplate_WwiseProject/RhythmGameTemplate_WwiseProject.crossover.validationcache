@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="97">
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\States\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1617585128" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.wproj" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.crossover.wsettings" DateLow="1617587002" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Factory Queries.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1617587002" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Events\Default Work Unit.wwu" DateLow="1617585100" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Factory Effects.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.4\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616564242" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\States\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1617381235" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.wproj" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.crossover.wsettings" DateLow="1617386744" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Factory Queries.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1617386656" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Events\Default Work Unit.wwu" DateLow="1617381208" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Factory Effects.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dropbox\Shared\R Line Music\RLine Eric Changes 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1615213345" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1615213345" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1615213345" DateHigh="0"/>
@@ -27,33 +81,33 @@
 	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1615213345" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1615213345" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\RhythmGameTemplate2\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1615213345" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\States\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1616970314" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.wproj" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.crossover.wsettings" DateLow="1616972287" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Factory Queries.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1616972168" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Events\Default Work Unit.wwu" DateLow="1616969256" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Factory Effects.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\States\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1617599528" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.wproj" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.crossover.wsettings" DateLow="1617609296" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Factory Queries.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1617608866" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Events\Default Work Unit.wwu" DateLow="1617599500" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Factory Effects.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Music+Gamplay\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616578642" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1616535443" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1616535443" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1616535443" DateHigh="0"/>
@@ -81,4 +135,31 @@
 	<ValidationCacheItem File="Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1616535442" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1616535442" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616535442" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\States\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1616970314" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.wproj" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\RhythmGameTemplate_WwiseProject.crossover.wsettings" DateLow="1617297507" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Factory Queries.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1617297492" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Events\Default Work Unit.wwu" DateLow="1617113730" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Factory Effects.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\R Line Thursday 4.1\MidtermGit\RLineAfterDark\RhythmGameTemplate_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616549842" DateHigh="0"/>
 </ValidationCache>

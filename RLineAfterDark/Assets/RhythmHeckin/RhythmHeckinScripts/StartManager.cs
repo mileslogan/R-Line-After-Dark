@@ -11,11 +11,14 @@ public class StartManager : MonoBehaviour
 
     int textSelect;
 
+    AudioSource clicker;
+
     // Start is called before the first frame update
     void Start()
     {
         textSelect = 1;
         ChangeTextColor();
+        clicker = GameObject.Find("Clicker").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,16 +28,19 @@ public class StartManager : MonoBehaviour
         {
             textSelect -= 1;
             ChangeTextColor();
+            clicker.Play();
         }
 
         if (Input.GetButtonDown("MenuRight"))
         {
             textSelect += 1;
             ChangeTextColor();
+            clicker.Play();
         }
 
         if (Input.GetButtonDown("MenuSelect"))
         {
+            clicker.Play();
             Select();
         }
     }

@@ -7,7 +7,7 @@ using System;
 public class RhythmHeckinWwiseSync : MonoBehaviour
 {
 
-    public AK.Wwise.Event rhythmHeckinEvent;
+    AK.Wwise.Event rhythmHeckinEvent;
 
     [HideInInspector] public static float secondsPerBeat = 0.5f;
     [HideInInspector] public static float BPM = 120;
@@ -23,14 +23,23 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
     public UnityEvent OnSongStart;
     public static Action<int, bool, int> TogglePerson;
 
-    
+    PersonToggle gameSceneManager;
+
+
 
     //id of the wwise event - using this to get the playback position
     static uint playingID;
 
+    private void Awake()
+    {
+        rhythmHeckinEvent = GameManager.tracksRef[GameManager.trackNum];
+        gameSceneManager = FindObjectOfType<PersonToggle>();
+    }
+
     IEnumerator Start()
     {
         yield return new WaitForSeconds(5);
+        gameSceneManager.Loaded();
         playingID = rhythmHeckinEvent.Post(gameObject, (uint)(AkCallbackType.AK_MusicSyncAll | AkCallbackType.AK_EnableGetMusicPlayPosition), MusicCallbackFunction);
 
     }

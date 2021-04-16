@@ -14,12 +14,17 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ERICTRACK1 = 4251951826U;
+        static const AkUniqueID ERICTRACK2 = 4251951825U;
+        static const AkUniqueID ERICTRACK3 = 4251951824U;
         static const AkUniqueID FALLSOUND = 1221274415U;
+        static const AkUniqueID GOODKICKEVENT = 1569552688U;
         static const AkUniqueID JUMPSOUND = 1000191198U;
+        static const AkUniqueID MISSKICK = 228198707U;
         static const AkUniqueID PLAYNOTEHIGHWAYMUSIC = 377537405U;
         static const AkUniqueID PLAYRHYTHMHECKINMUSIC = 2897602606U;
         static const AkUniqueID STOPNOTEHIGHWAYMUSIC = 3188186427U;
         static const AkUniqueID STOPRHYTHMHECKINMUSIC = 3304723600U;
+        static const AkUniqueID USERKICK = 437249198U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

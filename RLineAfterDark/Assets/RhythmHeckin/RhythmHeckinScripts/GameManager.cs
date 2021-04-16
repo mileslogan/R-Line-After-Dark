@@ -6,11 +6,17 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public AK.Wwise.Event[] tracks;
+    public static AK.Wwise.Event[] tracksRef;
     public static int gameMode;
     public static bool primaryInput;
     public static int trackNum;
     public static KeyCode[] inputs;
     public KeyCode[] modeOnePrimary, modeOneSecondary, modeTwoPrimary, modeTwoSecondary, modeThreePrimary, modeThreeSecondary;
+    public static Sprite[] sprites;
+    public Sprite[] modeOne, modeTwo;
+    public static int[] trackOneHighScores, trackTwoHighScores, trackThreeHighScores;
+    public static string[] trackNames;
+    public static int recentScore;
 
     private void Awake()
     {
@@ -25,12 +31,47 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        tracksRef = tracks;
         primaryInput = true;
         gameMode = 0;
         trackNum = 0;
 
         //TEMP
         inputs = modeOnePrimary;
+        sprites = modeOne;
+
+        trackNames = new string[3];
+        trackNames[0] = "L to Canarsie";
+        trackNames[1] = "6 to Brooklyn Bridge";
+        trackNames[2] = "J to Jamaica Center";
+
+        trackOneHighScores = new int[3]; trackTwoHighScores = new int[3]; trackThreeHighScores = new int[3];
+
+        for (int i = 0; i < 3; i++)
+        {
+            if(!PlayerPrefs.HasKey("0" + i.ToString() + "hs"))
+            {
+                PlayerPrefs.SetInt(("0" + i.ToString() + "hs"), 0);
+            }
+
+            if (!PlayerPrefs.HasKey("1" + i.ToString() + "hs"))
+            {
+                PlayerPrefs.SetInt(("1" + i.ToString() + "hs"), 0);
+            }
+
+            if (!PlayerPrefs.HasKey("2" + i.ToString() + "hs"))
+            {
+                PlayerPrefs.SetInt(("2" + i.ToString() + "hs"), 0);
+            }
+        }
+
+        for (int i = 0; i < 3; i++)
+        {
+            trackOneHighScores[i] = PlayerPrefs.GetInt("0" + i.ToString() + "hs");
+            trackTwoHighScores[i] = PlayerPrefs.GetInt("1" + i.ToString() + "hs");
+            trackThreeHighScores[i] = PlayerPrefs.GetInt("2" + i.ToString() + "hs");
+        }
+            
 
     }
 
@@ -43,7 +84,56 @@ public class GameManager : MonoBehaviour
     public static void ChangeScene(int sceneNum)
     {
         //Fadeout mayhaps???
+        if(sceneNum != 3)
         SceneManager.LoadScene(sceneNum);
+    }
+
+    public void ToGameScene()
+    {
+        switch (gameMode)
+        {
+            case 0:
+                sprites = modeOne;
+                if (primaryInput)
+                {
+                    inputs = modeOnePrimary;
+                }
+                else
+                {
+                    inputs = modeOneSecondary;
+                }
+                break;
+            case 1:
+                sprites = modeTwo;
+                if (primaryInput)
+                {
+                    inputs = modeTwoPrimary;
+                }
+                else
+                {
+                    inputs = modeTwoSecondary;
+                }
+                break;
+            case 2:
+                sprites = modeTwo;
+                if (primaryInput)
+                {
+                    inputs = modeThreePrimary;
+                }
+                else
+                {
+                    inputs = modeThreeSecondary;
+                }
+                break;
+        }
+        GameObject[] menuMusic = GameObject.FindGameObjectsWithTag("MenuMusic");
+
+        for(int i = 0; i < menuMusic.Length; i++)
+        {
+            Destroy(menuMusic[i]);
+        }
+
+        SceneManager.LoadScene(3);
     }
 
     public static void QuitGame()

@@ -11,16 +11,32 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1268211518" Language="SFX" Hash="2350034198">
+		<SoundBank Id="1268211518" Language="SFX" Hash="4067169756">
 			<ObjectPath>\SoundBanks\Default Work Unit\NoteHighway</ObjectPath>
 			<ShortName>NoteHighway</ShortName>
 			<Path>NoteHighway.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4251951826" Name="EricTrack1" ObjectPath="\Events\Default Work Unit\EricTrack1" DurationType="OneShot" DurationMin="86.160004" DurationMax="86.160004">
+				<Event Id="4251951826" Name="EricTrack1" ObjectPath="\Events\Default Work Unit\EricTrack1" DurationType="OneShot" DurationMin="95.707108" DurationMax="95.707108">
 					<IncludedMemoryFiles>
-						<File Id="957468146" Language="SFX">
-							<ShortName>track 1 125bpm no kick.wav</ShortName>
-							<Path>SFX/track 1 125bpm no kick_D79FB2B7.wem</Path>
+						<File Id="562218194" Language="SFX">
+							<ShortName>track 1 final no kick.wav</ShortName>
+							<Path>SFX/track 1 final no kick_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4251951825" Name="EricTrack2" ObjectPath="\Events\Default Work Unit\EricTrack2" DurationType="OneShot" DurationMin="104.607140" DurationMax="104.607140">
+					<IncludedMemoryFiles>
+						<File Id="460615611" Language="SFX">
+							<ShortName>track 2 100bpm no kick.wav</ShortName>
+							<Path>SFX/track 2 100bpm no kick_696A9007.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4251951824" Name="EricTrack3" ObjectPath="\Events\Default Work Unit\EricTrack3" DurationType="OneShot" DurationMin="134.489288" DurationMax="134.489288">
+					<IncludedMemoryFiles>
+						<File Id="700034714" Language="SFX">
+							<ShortName>track 3 130bpm no kick.wav</ShortName>
+							<Path>SFX/track 3 130bpm no kick_696A9007.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -32,11 +48,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1569552688" Name="GoodKickEvent" ObjectPath="\Events\Default Work Unit\GoodKickEvent" DurationType="OneShot" DurationMin="0.170444" DurationMax="0.170444">
+					<IncludedMemoryFiles>
+						<File Id="812299629" Language="SFX">
+							<ShortName>22good22_kick.wav</ShortName>
+							<Path>SFX/22good22_kick_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1000191198" Name="JumpSound" ObjectPath="\Events\Default Work Unit\JumpSound" DurationType="OneShot" DurationMin="0.139864" DurationMax="0.139864">
 					<IncludedMemoryFiles>
 						<File Id="563557586" Language="SFX">
 							<ShortName>sfx_movement_jump20.wav</ShortName>
 							<Path>SFX/sfx_movement_jump20_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="228198707" Name="MissKick" ObjectPath="\Events\Default Work Unit\MissKick" DurationType="OneShot" DurationMin="0.282771" DurationMax="0.282771">
+					<IncludedMemoryFiles>
+						<File Id="30392366" Language="SFX">
+							<ShortName>good_kick_2.wav</ShortName>
+							<Path>SFX/good_kick_2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -51,6 +83,14 @@
 				<Event Id="2897602606" Name="PlayRhythmHeckinMusic" ObjectPath="\Events\Default Work Unit\PlayRhythmHeckinMusic" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3188186427" Name="StopNoteHighwayMusic" ObjectPath="\Events\Default Work Unit\StopNoteHighwayMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3304723600" Name="StopRhythmHeckinMusic" ObjectPath="\Events\Default Work Unit\StopRhythmHeckinMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="437249198" Name="UserKick" ObjectPath="\Events\Default Work Unit\UserKick" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
+					<IncludedMemoryFiles>
+						<File Id="748076553" Language="SFX">
+							<ShortName>user kick.wav</ShortName>
+							<Path>SFX/user kick_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="839091913">
