@@ -1088,7 +1088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &632628036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &685434143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1657,11 +1657,8 @@ MonoBehaviour:
   modeSpecificText:
   - {fileID: 712104782}
   - {fileID: 421809426}
-  - {fileID: 685434144}
   trackSpecificText:
   - {fileID: 1759802647}
-  - {fileID: 632628037}
-  - {fileID: 1719355384}
   startText: {fileID: 552736956}
   backText: {fileID: 362998590}
   descText: {fileID: 424999051}
@@ -11357,7 +11354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1719355383
 RectTransform:
   m_ObjectHideFlags: 0
