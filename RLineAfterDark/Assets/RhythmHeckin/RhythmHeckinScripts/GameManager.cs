@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -81,13 +82,17 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public static void ChangeScene(int sceneNum)
+    //PRE FADE
+    public void ChangeScene(int sceneNum)
     {
         //Fadeout mayhaps???
         if(sceneNum != 3)
-        SceneManager.LoadScene(sceneNum);
+        {
+            StartCoroutine(FindObjectOfType<TransitionManager>().Fade(sceneNum));
+        }
     }
 
+    //PRE FADE
     public void ToGameScene()
     {
         switch (gameMode)
@@ -133,11 +138,11 @@ public class GameManager : MonoBehaviour
             Destroy(menuMusic[i]);
         }
 
-        SceneManager.LoadScene(3);
+        StartCoroutine(FindObjectOfType<TransitionManager>().Fade(3));
     }
 
-    public static void QuitGame()
+    public void QuitGame()
     {
-        Application.Quit();
+        StartCoroutine(FindObjectOfType<TransitionManager>().Fade(-1));
     }
 }

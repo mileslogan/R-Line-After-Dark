@@ -45,13 +45,14 @@ public class PersonToggle : MonoBehaviour
 
     public GameObject scoreObject, comboObject, circleObject, inicatorObject, loadingObject;
 
-
+    GameManager bigManager;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        bigManager = FindObjectOfType<GameManager>();
         scoreObject.SetActive(false); comboObject.SetActive(false); circleObject.SetActive(false); inicatorObject.SetActive(false);
         loadingObject.SetActive(true);
 
@@ -196,7 +197,7 @@ public class PersonToggle : MonoBehaviour
     public void ToPostGame()
     {
         GameManager.recentScore = score;
-        GameManager.ChangeScene(4);
+        bigManager.ChangeScene(4);
     }
 
     public void Loaded()
