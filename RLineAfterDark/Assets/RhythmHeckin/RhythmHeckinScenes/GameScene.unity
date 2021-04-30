@@ -29327,6 +29327,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  overrideEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 12ef3e7601f814efbb13f9bff9735d48,
+      type: 2}
 --- !u!4 &718698721
 Transform:
   m_ObjectHideFlags: 0
