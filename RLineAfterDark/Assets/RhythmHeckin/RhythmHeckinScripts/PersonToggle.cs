@@ -70,6 +70,7 @@ public class PersonToggle : MonoBehaviour
         comboText.text = "Combo: " + currentcombo;
         missedTime = Mathf.RoundToInt((RhythmHeckinWwiseSync.secondsPerBeat * 1000));
         currentRoute.text = GameManager.trackNames[GameManager.trackNum];
+        UpdateSprites();
     }
 
     public void UpdateSprites()
