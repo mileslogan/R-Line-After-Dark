@@ -25,6 +25,7 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     PersonToggle gameSceneManager;
 
+    public AK.Wwise.Event overrideEvent;
     [SerializeField] TutorialHandler th;
 
     //id of the wwise event - using this to get the playback position
@@ -32,6 +33,15 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     private void Awake()
     {
+        if(GameManager.trackNum != 0)
+        {
+            rhythmHeckinEvent = GameManager.tracksRef[GameManager.trackNum];
+        }
+        else
+        {
+            rhythmHeckinEvent = overrideEvent;
+            GameManager.trackNum = 1;
+        }
         SetSong(GameManager.trackNum);
         gameSceneManager = FindObjectOfType<PersonToggle>();
     }

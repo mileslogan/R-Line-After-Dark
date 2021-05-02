@@ -13,9 +13,12 @@ public class StartManager : MonoBehaviour
 
     AudioSource clicker;
 
+    GameManager bigManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        bigManager = FindObjectOfType<GameManager>();
         textSelect = 1;
         ChangeTextColor();
         clicker = GameObject.Find("Clicker").GetComponent<AudioSource>();
@@ -85,11 +88,11 @@ public class StartManager : MonoBehaviour
     {
         if(textSelect == 3)
         {
-            GameManager.QuitGame();
+            bigManager.QuitGame();
         }
         else
         {
-            GameManager.ChangeScene(textSelect);
+            bigManager.ChangeScene(textSelect);
         }
     }
 }

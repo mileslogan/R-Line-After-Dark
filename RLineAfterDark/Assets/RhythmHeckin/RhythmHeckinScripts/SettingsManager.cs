@@ -15,10 +15,12 @@ public class SettingsManager : MonoBehaviour
     public string primaryDesc, secondaryDesc;
 
     AudioSource clicker;
+    GameManager bigManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        bigManager = FindObjectOfType<GameManager>();
         textSelect = GameManager.primaryInput;
         UpdateText();
         clicker = GameObject.Find("Clicker").GetComponent<AudioSource>();
@@ -38,7 +40,7 @@ public class SettingsManager : MonoBehaviour
         {
             clicker.Play();
             GameManager.primaryInput = textSelect;
-            GameManager.ChangeScene(0);
+            bigManager.ChangeScene(0);
         }
     }
 

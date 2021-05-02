@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4324d4c9d8f602488bee23fb3f09b88f
     GuidInternal: 
-    m_lastTime: -8585850282434775808
+    m_lastTime: -8585821536184775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4a857d6160b36442a9fd7563999d440c
     GuidInternal: 
-    m_lastTime: -8585850282434775808
+    m_lastTime: -8585821536204775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -60,7 +60,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1d163824c600e64381ba4536edf3c11d
     GuidInternal: 
-    m_lastTime: -8585840073574775808
+    m_lastTime: -8585821536184775808
     List:
     - name: NoteHighway
       guid: 8b61833c15511c4fa063f43a7b6f644d
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6de5eaaec14eeb48818adbb4695ce2e1
     GuidInternal: 
-    m_lastTime: -8585840073854775808
+    m_lastTime: -8585821536214775808
     List:
     - name: EricTrack1
       guid: 58dc4df916e4574fb0bad0a5121d951e
@@ -233,7 +233,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: be950a66f6e4d44ab093fa9e3b67e008
     GuidInternal: 
-    m_lastTime: -8585850282434775808
+    m_lastTime: -8585821536214775808
     List:
     - name: MusicMeter
       guid: cf4ef2cd51cf57419f4d0120e6943486
@@ -252,7 +252,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1e57b0a9c2949444ae349d22293f0e19
     GuidInternal: 
-    m_lastTime: -8585850282434775808
+    m_lastTime: -8585821536184775808
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -262,7 +262,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 974c2d5a3bdbcb45bb7a55ff6a0445e3
     GuidInternal: 
-    m_lastTime: -8585850282434775808
+    m_lastTime: -8585821536184775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -272,7 +272,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4ce5279378003a4885ac301f2b989854
     GuidInternal: 
-    m_lastTime: -8585850282434775808
+    m_lastTime: -8585821536184775808
     List: []
   ExpandedItems:
   - /RhythmGameTemplate_WwiseProject

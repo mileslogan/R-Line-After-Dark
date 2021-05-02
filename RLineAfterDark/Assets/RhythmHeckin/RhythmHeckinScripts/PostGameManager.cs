@@ -75,7 +75,7 @@ public class PostGameManager : MonoBehaviour
             clicker.Play();
             if (backSelect)
             {
-                GameManager.ChangeScene(1);
+                bigManager.ChangeScene(1);
             }
             else
             {

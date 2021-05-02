@@ -95,7 +95,7 @@ public class SongSelectManager : MonoBehaviour
             }
             else if(row == 3 && !startSelect)
             {
-                GameManager.ChangeScene(0);
+                bigManager.ChangeScene(0);
             }
             else
             {
