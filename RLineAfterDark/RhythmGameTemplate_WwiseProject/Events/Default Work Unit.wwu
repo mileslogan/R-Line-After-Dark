@@ -141,6 +141,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="EricTrack4" ID="{B7FD278E-5861-4AAD-B382-28A91A2D92B2}">
+					<ChildrenList>
+						<Action Name="" ID="{3255225C-4B2A-4157-95F4-D1798565A060}" ShortID="427426199">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Track 4" ID="{05C84D05-26A9-4DAC-A1DE-063620EFA350}" WorkUnitID="{5142D0E9-31DD-4B24-9FFE-8C6ACB1EFCDB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
