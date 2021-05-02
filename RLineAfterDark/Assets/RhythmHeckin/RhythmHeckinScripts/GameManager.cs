@@ -95,6 +95,19 @@ public class GameManager : MonoBehaviour
     //PRE FADE
     public void ToGameScene()
     {
+        UpdateSpritesAndInput();
+        GameObject[] menuMusic = GameObject.FindGameObjectsWithTag("MenuMusic");
+
+        for(int i = 0; i < menuMusic.Length; i++)
+        {
+            Destroy(menuMusic[i]);
+        }
+
+        StartCoroutine(FindObjectOfType<TransitionManager>().Fade(3));
+    }
+
+    public void UpdateSpritesAndInput()
+    {
         switch (gameMode)
         {
             case 0:
@@ -131,14 +144,6 @@ public class GameManager : MonoBehaviour
                 }
                 break;
         }
-        GameObject[] menuMusic = GameObject.FindGameObjectsWithTag("MenuMusic");
-
-        for(int i = 0; i < menuMusic.Length; i++)
-        {
-            Destroy(menuMusic[i]);
-        }
-
-        StartCoroutine(FindObjectOfType<TransitionManager>().Fade(3));
     }
 
     public void QuitGame()

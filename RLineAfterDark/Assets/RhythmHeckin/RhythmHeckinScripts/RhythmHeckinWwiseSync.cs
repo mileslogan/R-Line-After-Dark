@@ -23,7 +23,7 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
     public UnityEvent OnSongStart;
     public static Action<int, bool, int> TogglePerson;
 
-    PersonToggle gameSceneManager;
+   public PersonToggle gameSceneManager;
 
     public AK.Wwise.Event overrideEvent;
     [SerializeField] TutorialHandler th;
@@ -33,15 +33,6 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     private void Awake()
     {
-        if(GameManager.trackNum != 0)
-        {
-            rhythmHeckinEvent = GameManager.tracksRef[GameManager.trackNum];
-        }
-        else
-        {
-            rhythmHeckinEvent = overrideEvent;
-            GameManager.trackNum = 1;
-        }
         SetSong(GameManager.trackNum);
         gameSceneManager = FindObjectOfType<PersonToggle>();
     }
@@ -63,7 +54,15 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     public void SetSong(int num)
     {
-        rhythmHeckinEvent = GameManager.tracksRef[num];
+        if (GameManager.trackNum != 0)
+        {
+            rhythmHeckinEvent = GameManager.tracksRef[num];
+        }
+        else
+        {
+            rhythmHeckinEvent = overrideEvent;
+            GameManager.trackNum = 1;
+        }
     }
 
     public void StopSong()

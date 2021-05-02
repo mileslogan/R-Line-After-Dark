@@ -50,6 +50,8 @@ public class PersonToggle : MonoBehaviour
 
     GameManager bigManager;
 
+    public int Currentcombo { get => currentcombo; set => currentcombo = value; }
+
 
 
     // Start is called before the first frame update
@@ -67,8 +69,12 @@ public class PersonToggle : MonoBehaviour
         scoreText.text = "Score: " + score;
         comboText.text = "Combo: " + currentcombo;
         missedTime = Mathf.RoundToInt((RhythmHeckinWwiseSync.secondsPerBeat * 1000));
-        personSprites = GameManager.sprites;
         currentRoute.text = GameManager.trackNames[GameManager.trackNum];
+    }
+
+    public void UpdateSprites()
+    {
+        personSprites = GameManager.sprites;
     }
 
     // Update is called once per frame
