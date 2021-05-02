@@ -25,23 +25,40 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     PersonToggle gameSceneManager;
 
-
+    [SerializeField] TutorialHandler th;
 
     //id of the wwise event - using this to get the playback position
     static uint playingID;
 
     private void Awake()
     {
-        rhythmHeckinEvent = GameManager.tracksRef[GameManager.trackNum];
+        SetSong(GameManager.trackNum);
         gameSceneManager = FindObjectOfType<PersonToggle>();
     }
 
-    IEnumerator Start()
+    void Start()
     {
-        yield return new WaitForSeconds(5);
+        if (th == null) // very silly way of being like, if we're not in the tutorial scene, load the song immediately
+        {
+            StartCoroutine(LoadAndStartSong());
+        }
+    }
+
+    public IEnumerator LoadAndStartSong(float waitingTime = 5f)
+    {
+        yield return new WaitForSeconds(waitingTime);
         gameSceneManager.Loaded();
         playingID = rhythmHeckinEvent.Post(gameObject, (uint)(AkCallbackType.AK_MusicSyncAll | AkCallbackType.AK_EnableGetMusicPlayPosition), MusicCallbackFunction);
+    }
 
+    public void SetSong(int num)
+    {
+        rhythmHeckinEvent = GameManager.tracksRef[num];
+    }
+
+    public void StopSong()
+    {
+        rhythmHeckinEvent.Stop(gameObject);
     }
 
     void MusicCallbackFunction(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
