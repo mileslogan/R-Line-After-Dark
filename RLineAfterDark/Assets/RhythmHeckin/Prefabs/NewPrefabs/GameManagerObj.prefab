@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6221187041778894176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6221187041778894190}
+  - component: {fileID: 6221187041778894191}
+  m_Layer: 0
+  m_Name: GameManagerObj
+  m_TagString: Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6221187041778894190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221187041778894176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8488879, y: -0.19467098, z: 13.440604}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6221187041778894191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221187041778894176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373d6198575a445f6b2746564f95266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracks:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 95776c4b75d324fd0887e26c383b210e,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 12ef3e7601f814efbb13f9bff9735d48,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d18653830d66444e9bfeb85c58dd3ca3,
+      type: 2}
+  modeOnePrimary: 7a0000007a0000007a0000007a0000007a000000
+  modeOneSecondary: 2000000020000000200000002000000020000000
+  modeTwoPrimary: 7a00000078000000780000007800000078000000
+  modeTwoSecondary: 200000000d0000000d0000000d0000000d000000
+  modeThreePrimary: 7a00000011010000130100001201000014010000
+  modeThreeSecondary: 2000000077000000640000007300000061000000
+  modeOne:
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  modeTwo:
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  - {fileID: 21300000, guid: ca135d28534974a1795a0b664ab1d515, type: 3}
+  - {fileID: 21300000, guid: d605957d11db34266b60e3113a3cbaab, type: 3}
+  - {fileID: 21300000, guid: df3c51182751948f4bef09538c486431, type: 3}
+  - {fileID: 21300000, guid: 0e0ba24c723ee4b3895a7035e0b0ff20, type: 3}

@@ -23,35 +23,51 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
     public UnityEvent OnSongStart;
     public static Action<int, bool, int> TogglePerson;
 
-    PersonToggle gameSceneManager;
+   public PersonToggle gameSceneManager;
 
     public AK.Wwise.Event overrideEvent;
-
-
+    [SerializeField] TutorialHandler th;
 
     //id of the wwise event - using this to get the playback position
     static uint playingID;
 
     private void Awake()
     {
-        if(GameManager.trackNum != 0)
+        SetSong(GameManager.trackNum);
+        gameSceneManager = FindObjectOfType<PersonToggle>();
+    }
+
+    void Start()
+    {
+        if (th == null) // very silly way of being like, if we're not in the tutorial scene, load the song immediately
         {
-            rhythmHeckinEvent = GameManager.tracksRef[GameManager.trackNum];
+            StartCoroutine(LoadAndStartSong());
+        }
+    }
+
+    public IEnumerator LoadAndStartSong(float waitingTime = 5f)
+    {
+        yield return new WaitForSeconds(waitingTime);
+        gameSceneManager.Loaded();
+        playingID = rhythmHeckinEvent.Post(gameObject, (uint)(AkCallbackType.AK_MusicSyncAll | AkCallbackType.AK_EnableGetMusicPlayPosition), MusicCallbackFunction);
+    }
+
+    public void SetSong(int num)
+    {
+        if (GameManager.trackNum != 0)
+        {
+            rhythmHeckinEvent = GameManager.tracksRef[num];
         }
         else
         {
             rhythmHeckinEvent = overrideEvent;
             GameManager.trackNum = 1;
         }
-        gameSceneManager = FindObjectOfType<PersonToggle>();
     }
 
-    IEnumerator Start()
+    public void StopSong()
     {
-        yield return new WaitForSeconds(5);
-        gameSceneManager.Loaded();
-        playingID = rhythmHeckinEvent.Post(gameObject, (uint)(AkCallbackType.AK_MusicSyncAll | AkCallbackType.AK_EnableGetMusicPlayPosition), MusicCallbackFunction);
-
+        rhythmHeckinEvent.Stop(gameObject);
     }
 
     void MusicCallbackFunction(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)

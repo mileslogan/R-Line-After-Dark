@@ -15,6 +15,7 @@ public class Person
     public int perfWindowStart;
     public int perfWindowEnd;
     public int personSpriteNum;
+    public int timing;
 }
 
 public class PersonToggle : MonoBehaviour
@@ -22,6 +23,8 @@ public class PersonToggle : MonoBehaviour
     int score;
     int currentcombo;
     int currentPerfCombo;
+
+    int thisBeat = 1;
 
     public Text scoreText, comboText, currentRoute;
 
@@ -47,6 +50,8 @@ public class PersonToggle : MonoBehaviour
 
     GameManager bigManager;
 
+    public int Currentcombo { get => currentcombo; set => currentcombo = value; }
+
 
 
     // Start is called before the first frame update
@@ -64,8 +69,13 @@ public class PersonToggle : MonoBehaviour
         scoreText.text = "Score: " + score;
         comboText.text = "Combo: " + currentcombo;
         missedTime = Mathf.RoundToInt((RhythmHeckinWwiseSync.secondsPerBeat * 1000));
-        personSprites = GameManager.sprites;
         currentRoute.text = GameManager.trackNames[GameManager.trackNum];
+        UpdateSprites();
+    }
+
+    public void UpdateSprites()
+    {
+        personSprites = GameManager.sprites;
     }
 
     // Update is called once per frame
@@ -102,7 +112,7 @@ public class PersonToggle : MonoBehaviour
                 }
                 else if (nextPerson.windowStartMissed < currentTime)
                 {
-                    BadPress(true);
+                    BadPress(true, nextPerson.timing);
                     Debug.Log("Too Early!!!");
                     TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
                     //passengerQueue.Dequeue();
@@ -112,7 +122,7 @@ public class PersonToggle : MonoBehaviour
 
             if(currentTime > nextPerson.windowEnd)
             {
-                BadPress(false);
+                BadPress(false, nextPerson.timing);
                 Debug.Log("Too Late!!!");
                 TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
                 //passengerQueue.Dequeue();
@@ -145,6 +155,8 @@ public class PersonToggle : MonoBehaviour
             newPerson.windowEndMissed = newPerson.windowStartMissed + missedTime;
             newPerson.perfWindowStart = (RhythmHeckinWwiseSync.GetMusicTimeInMS() + Mathf.RoundToInt(offset * RhythmHeckinWwiseSync.secondsPerBeat * 1000) - perfectWindow / 2);
             newPerson.perfWindowEnd = newPerson.windowStart + perfectWindow;
+            newPerson.timing = thisBeat;
+            thisBeat++;
 
 
             //passengerQueue.Enqueue(newPerson);
@@ -169,11 +181,16 @@ public class PersonToggle : MonoBehaviour
         comboText.text = "Combo: " + currentcombo;
     }
 
-    void BadPress(bool playSound)
+    void BadPress(bool playSound, int noteMissed)
     {
         if (playSound)
         {
             missSound.Post(gameObject);
+        }
+        if(GameManager.gameMode == 1)
+        {
+            Tinylytics.AnalyticsManager.LogCustomMetric("NoteLost", noteMissed.ToString());
+            Tinylytics.AnalyticsManager.LogCustomMetric("ComboLost", currentcombo.ToString());
         }
         currentcombo = 0;
         currentPerfCombo = 0;
