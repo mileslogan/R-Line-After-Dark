@@ -178,9 +178,13 @@ public class PersonToggle : MonoBehaviour
         feedbackRenderer.sprite = feedbackSprite[1];
         feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         scoreText.text = "Score: " + score;
-        comboText.text = "Combo: " + currentcombo;
+        UpdateCombo();
     }
 
+    public void UpdateCombo()
+    {
+        comboText.text = "Combo: " + currentcombo;
+    }
     void BadPress(bool playSound, int noteMissed)
     {
         if (playSound)
@@ -196,7 +200,7 @@ public class PersonToggle : MonoBehaviour
         currentPerfCombo = 0;
         feedbackRenderer.sprite = feedbackSprite[2];
         feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
-        comboText.text = "Combo: " + currentcombo;
+        UpdateCombo();
     }
 
     void PerfectPress()
@@ -208,7 +212,7 @@ public class PersonToggle : MonoBehaviour
         feedbackRenderer.sprite = feedbackSprite[0];
         feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         scoreText.text = "Score: " + score;
-        comboText.text = "Combo: " + currentcombo;
+        UpdateCombo();
     }
 
     public void ToPostGame()

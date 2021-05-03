@@ -13,12 +13,14 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class TutorialHandler : MonoBehaviour
 {
-    [SerializeField]Image textbox;
+    [SerializeField] Animator anim;
+    [SerializeField] Image textbox;
     [SerializeField] Text _text;
+    [SerializeField] Image examplePerson, exampleArrow;
 
     int currentLine; // line in tutorialText. Every 2 lines we continue
 
-    [TextArea(2,5)]
+    [TextArea(2, 5)]
     [SerializeField] string[] tutorialText;
 
     [SerializeField] RhythmHeckinWwiseSync wwiseSync;
@@ -36,12 +38,12 @@ public class TutorialHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKeyDown && canShowText)
+        if (Input.anyKeyDown && canShowText)
         {
             ShowNextLine();
         }
 
-        if(wwiseSync.gameSceneManager.Currentcombo >= 9)
+        if (wwiseSync.gameSceneManager.Currentcombo >= 9)
         {
             ShowText();
         }
@@ -49,28 +51,65 @@ public class TutorialHandler : MonoBehaviour
 
     public void ShowText()
     {
+        _text.gameObject.SetActive(true);
         textbox.gameObject.SetActive(true);
         wwiseSync.StopSong();
         canShowText = true;
-        // if u fuck up a lot put oh no try again there
+        anim.Play("show");
+    }
+
+    string ReplaceString(string given)
+    {
+        if(given.Contains("["))
+        {
+            if(given.Contains("[Z]"))
+            {
+                if (GameManager.primaryInput)
+                    given = given.Replace("[Z]", "Z");
+                else
+                    given = given.Replace("[Z]", "Space");
+            }
+
+            if (given.Contains("[X]"))
+            {
+                if (GameManager.primaryInput)
+                    given = given.Replace("[X]", "X");
+                else
+                    given = given.Replace("[X]", "Return");
+            }
+
+            if (given.Contains("[WASD]"))
+            {
+                if (GameManager.primaryInput)
+                    given = given.Replace("[WASD]", "the arrow keys");
+                else
+                    given = given.Replace("[WASD]", "WASD");
+            }
+        }
+
+
+        return given;
     }
 
     public void ShowNextLine()
     {
-        if(currentLine == 1 || currentLine == 3 || currentLine == 5)
+        if(currentLine == 3 || currentLine == 5 || currentLine == 8)
         {
             HideText();
             StartCoroutine(wwiseSync.LoadAndStartSong(2));
 
-            if (currentLine == 3)
-                GameManager.gameMode = 1;
             if (currentLine == 5)
+            {
+                GameManager.gameMode = 1;
+            }
+            if (currentLine == 8)
                 GameManager.gameMode = 2;
 
             gm.UpdateSpritesAndInput();
             wwiseSync.gameSceneManager.UpdateSprites();
             wwiseSync.gameSceneManager.passengerList = new List<Person>();
         }
+
 
         currentLine++;
         if(currentLine >= tutorialText.Length)
@@ -80,14 +119,24 @@ public class TutorialHandler : MonoBehaviour
             SceneManager.LoadScene(1);
             return;
         }
-        _text.text = tutorialText[currentLine];
+
+        if (currentLine == 2)
+            examplePerson.gameObject.SetActive(true);
+        if(currentLine == 5)
+            exampleArrow.gameObject.SetActive(true);
+
+        _text.text = ReplaceString(tutorialText[currentLine]);
     }
 
     public void HideText()
     {
+        _text.gameObject.SetActive(false);
         wwiseSync.gameSceneManager.Currentcombo = 0;
+        wwiseSync.gameSceneManager.UpdateCombo();
         canShowText = false;
-        textbox.gameObject.SetActive(false);
+        examplePerson.gameObject.SetActive(false);
+        exampleArrow.gameObject.SetActive(false);
+        anim.Play("hide");
     }
 
     public void PauseGame()
