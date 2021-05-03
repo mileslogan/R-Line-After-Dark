@@ -60,7 +60,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1d163824c600e64381ba4536edf3c11d
     GuidInternal: 
-    m_lastTime: -8585821536184775808
+    m_lastTime: -8585817818354775808
     List:
     - name: NoteHighway
       guid: 8b61833c15511c4fa063f43a7b6f644d
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6de5eaaec14eeb48818adbb4695ce2e1
     GuidInternal: 
-    m_lastTime: -8585821536214775808
+    m_lastTime: -8585817818354775808
     List:
     - name: EricTrack1
       guid: 58dc4df916e4574fb0bad0a5121d951e
@@ -91,8 +91,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/EricTrack1
       maxAttenuation: 0
-      maxDuration: 95.70711
-      minDuration: 95.70711
+      maxDuration: 91.863144
+      minDuration: 91.863144
     - name: EricTrack2
       guid: 822f7634e1682049abcb775a81f4c222
       id: 4251951825
@@ -117,6 +117,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 134.48929
       minDuration: 134.48929
+    - name: EricTrack4
+      guid: 8e27fdb76158ad4ab38228a91a2d92b2
+      id: 4251951831
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: EricTrack4
+        ObjectType: 3
+      Path: Default Work Unit/EricTrack4
+      maxAttenuation: 0
+      maxDuration: 120.54177
+      minDuration: 120.54177
     - name: FallSound
       guid: f7f8447185d2be42b387c4d54e3e99d0
       id: 1221274415

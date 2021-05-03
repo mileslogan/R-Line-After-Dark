@@ -29,6 +29,7 @@ public class PersonToggle : MonoBehaviour
     public Text scoreText, comboText, currentRoute;
 
     public SpriteRenderer[] people;
+    public PersonSprite[] peopleScript;
     //Queue<Person> passengerQueue;
     public List<Person> passengerList;
     int offset = 6;
@@ -96,7 +97,7 @@ public class PersonToggle : MonoBehaviour
                 {
                     PerfectPress();
                     stationParticles[nextPerson.personIndex].Play();
-                    TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                    TogglePerson(nextPerson.personIndex, false, 5);
                     //passengerQueue.Dequeue();
                     passengerList.Remove(nextPerson);
                 }
@@ -105,7 +106,7 @@ public class PersonToggle : MonoBehaviour
                     
                         GoodPress();
                         stationParticles[nextPerson.personIndex].Play();
-                        TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                        TogglePerson(nextPerson.personIndex, false, 6);
                         //passengerQueue.Dequeue();
                         passengerList.Remove(nextPerson);
 
@@ -114,7 +115,7 @@ public class PersonToggle : MonoBehaviour
                 {
                     BadPress(true, nextPerson.timing);
                     Debug.Log("Too Early!!!");
-                    TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                    TogglePerson(nextPerson.personIndex, false, 7);
                     //passengerQueue.Dequeue();
                     passengerList.Remove(nextPerson);
                 }
@@ -124,7 +125,7 @@ public class PersonToggle : MonoBehaviour
             {
                 BadPress(false, nextPerson.timing);
                 Debug.Log("Too Late!!!");
-                TogglePerson(nextPerson.personIndex, false, nextPerson.personSpriteNum);
+                TogglePerson(nextPerson.personIndex, false, 7);
                 //passengerQueue.Dequeue();
                 passengerList.Remove(nextPerson);
             }
@@ -142,8 +143,22 @@ public class PersonToggle : MonoBehaviour
 
     public void TogglePerson(int person, bool on, int pickup)
     {
-        people[person].sprite = personSprites[pickup];
-        people[person].enabled = on;
+        //people[person].sprite = personSprites[pickup];
+        //people[person].enabled = on;
+        IEnumerator coroutine;
+
+        if(pickup < 5)
+        {
+            coroutine = peopleScript[person].PersonFade(on, personSprites[pickup]);
+        }
+        else
+        {
+            coroutine = peopleScript[person].PersonFade(on, feedbackSprite[pickup - 5]);
+        }
+        
+        peopleScript[person].StartCoroutine(coroutine);
+
+
         if (on)
         {
             Person newPerson = new Person();
