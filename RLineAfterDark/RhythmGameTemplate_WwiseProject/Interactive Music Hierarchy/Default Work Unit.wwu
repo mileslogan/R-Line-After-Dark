@@ -3416,6 +3416,7 @@
 				<MusicSegment Name="Track 4" ID="{05C84D05-26A9-4DAC-A1DE-063620EFA350}" ShortID="540371938">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="126508.417557033"/>
+						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 						<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="135"/>
 					</PropertyList>
@@ -3459,7 +3460,7 @@
 												<Property Name="EndTrimOffset" Type="Real64" Value="113777.791666667"/>
 												<Property Name="FadeInMode" Type="int16" Value="0"/>
 												<Property Name="FadeOutMode" Type="int16" Value="0"/>
-												<Property Name="PlayAt" Type="Real64" Value="6763.98129863883"/>
+												<Property Name="PlayAt" Type="Real64" Value="6790.9956334428"/>
 											</PropertyList>
 											<AudioSourceRef Name="track 4 135bpm no kick" ID="{7E58FE2A-3A79-4092-9339-C8D20251F862}"/>
 										</MusicClip>
@@ -3483,7 +3484,7 @@
 						<MusicCue Name="0p" ID="{D278E5BD-3DEE-475E-AC0D-0C1840AC5D60}">
 							<PropertyList>
 								<Property Name="CueType" Type="int16" Value="2"/>
-								<Property Name="TimeMs" Type="Real64" Value="11238.4000491671"/>
+								<Property Name="TimeMs" Type="Real64" Value="11235.4400778872"/>
 							</PropertyList>
 						</MusicCue>
 						<MusicCue Name="3p" ID="{2C1452DF-87A9-4400-BBE6-B87BA73D367C}">
@@ -4455,7 +4456,7 @@
 						<MusicCue Name="StartSong" ID="{8D7ABE94-9709-490F-9676-263B32782BB3}">
 							<PropertyList>
 								<Property Name="CueType" Type="int16" Value="2"/>
-								<Property Name="TimeMs" Type="Real64" Value="5929.18237380562"/>
+								<Property Name="TimeMs" Type="Real64" Value="6790.9956334428"/>
 							</PropertyList>
 						</MusicCue>
 						<MusicCue Name="LevelEnded" ID="{E8898E88-2E4B-4B5B-97B8-367007CCBE8E}">

@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID ERICTRACK1 = 4251951826U;
         static const AkUniqueID ERICTRACK2 = 4251951825U;
         static const AkUniqueID ERICTRACK3 = 4251951824U;
+        static const AkUniqueID ERICTRACK4 = 4251951831U;
         static const AkUniqueID FALLSOUND = 1221274415U;
         static const AkUniqueID GOODKICKEVENT = 1569552688U;
         static const AkUniqueID JUMPSOUND = 1000191198U;

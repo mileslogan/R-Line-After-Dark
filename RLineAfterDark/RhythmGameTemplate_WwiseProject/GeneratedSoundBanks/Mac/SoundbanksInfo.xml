@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1268211518" Language="SFX" Hash="1787830771">
+		<SoundBank Id="1268211518" Language="SFX" Hash="265429653">
 			<ObjectPath>\SoundBanks\Default Work Unit\NoteHighway</ObjectPath>
 			<ShortName>NoteHighway</ShortName>
 			<Path>NoteHighway.bnk</Path>
@@ -40,7 +40,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4251951831" Name="EricTrack4" ObjectPath="\Events\Default Work Unit\EricTrack4" DurationType="OneShot" DurationMin="120.541771" DurationMax="120.541771">
+				<Event Id="4251951831" Name="EricTrack4" ObjectPath="\Events\Default Work Unit\EricTrack4" DurationType="OneShot" DurationMin="120.568787" DurationMax="120.568787">
 					<IncludedMemoryFiles>
 						<File Id="30859981" Language="SFX">
 							<ShortName>track 4 135bpm no kick.wav</ShortName>
