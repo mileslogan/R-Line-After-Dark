@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        tracksRef = tracks;
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Manager");
         if (objs.Length > 1)
         {
@@ -32,7 +33,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tracksRef = tracks;
         primaryInput = true;
         gameMode = 0;
         trackNum = 0;

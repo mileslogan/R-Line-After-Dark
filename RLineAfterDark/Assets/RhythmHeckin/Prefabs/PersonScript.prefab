@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5149699368866503263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5149699368866503261}
+  - component: {fileID: 5149699368866503260}
+  m_Layer: 0
+  m_Name: PersonScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5149699368866503261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149699368866503263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5149699368866503260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149699368866503263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d3ed609fbb44103a87ba59ada7ffd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  comboText: {fileID: 0}
+  currentRoute: {fileID: 0}
+  people:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  peopleScript:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  passengerList: []
+  perfectWindow: 125
+  goodWindow: 200
+  missedTime: 250
+  feedbackRenderer: {fileID: 0}
+  feedbackSprite:
+  - {fileID: 21300000, guid: edd8c0d233b174a0c8ef179306087c87, type: 3}
+  - {fileID: 21300000, guid: 684c50d52393d4a9bbb91e9ab8c8500d, type: 3}
+  - {fileID: 21300000, guid: 8c15348c2b43f49a590678ecb7cc0497, type: 3}
+  stationParticles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  personSprites:
+  - {fileID: 21300000, guid: d7726283858c44a6a9f9317ea515907c, type: 3}
+  - {fileID: 21300000, guid: ca135d28534974a1795a0b664ab1d515, type: 3}
+  - {fileID: 21300000, guid: d605957d11db34266b60e3113a3cbaab, type: 3}
+  - {fileID: 21300000, guid: df3c51182751948f4bef09538c486431, type: 3}
+  - {fileID: 21300000, guid: 0e0ba24c723ee4b3895a7035e0b0ff20, type: 3}
+  goodSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f7cf5a11eb2ff455f8101edfbc9d4cfe,
+      type: 2}
+  perfSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b4305a34af67c44ac93da02ba5b441c0,
+      type: 2}
+  missSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8d4919ed4843e4264809db37089ffdbe,
+      type: 2}
+  scoreObject: {fileID: 0}
+  comboObject: {fileID: 0}
+  circleObject: {fileID: 0}
+  inicatorObject: {fileID: 0}
+  loadingObject: {fileID: 0}
