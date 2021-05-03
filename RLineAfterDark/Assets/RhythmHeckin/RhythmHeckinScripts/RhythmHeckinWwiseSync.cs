@@ -67,6 +67,7 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     public void StopSong()
     {
+        if (rhythmHeckinEvent == null) return;
         rhythmHeckinEvent.Stop(gameObject);
     }
 
