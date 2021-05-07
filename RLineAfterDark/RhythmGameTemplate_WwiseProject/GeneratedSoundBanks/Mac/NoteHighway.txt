@@ -19,9 +19,9 @@ Effect plug-ins	ID	Name	Type				Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	30392366	MissSoundReal	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\good_kick_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MissSound\MissSoundReal		54356
 	30859981	track 4 135bpm	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 4 135bpm no kick_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Track 4\track 4 135bpm		21845400
-	460615611	track 2 100bpm	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 2 100bpm no kick_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Track 2\track 2 100bpm		1055150
+	460615611	track 2 100bpm	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 2 100bpm no kick_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Track 2\track 2 100bpm		1061290
 	563557586	sfx_movement_jump20	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\sfx_movement_jump20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_movement_jump20		12400
-	700034714	track 3 130bpm	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 3 130bpm no kick_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Track 3\track 3 130bpm		1546726
+	700034714	track 3 130bpm	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\track 3 130bpm no kick_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Track 3\track 3 130bpm		1489636
 	748076553	User Kick	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\user kick_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\UserKick\User Kick		36720
 	812299629	GoodKickReal	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\22good22_kick_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GoodKick\GoodKickReal		32724
 	881191192	08 Two Bit Boss Battles	Y:\Desktop\R Line\RLineAfterDark\RhythmGameTemplate_WwiseProject\.cache\Mac\SFX\08 Two Bit Boss Battles_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\DistractingRhythmGame\RhythmGameTemplateMusic\08 Two Bit Boss Battles		1833809
