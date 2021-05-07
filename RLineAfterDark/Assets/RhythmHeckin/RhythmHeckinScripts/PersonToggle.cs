@@ -125,6 +125,7 @@ public class PersonToggle : MonoBehaviour
             {
                 BadPress(false, nextPerson.timing);
                 Debug.Log("Too Late!!!");
+                Debug.Log(nextPerson.personIndex.ToString());
                 TogglePerson(nextPerson.personIndex, false, 7);
                 //passengerQueue.Dequeue();
                 passengerList.Remove(nextPerson);

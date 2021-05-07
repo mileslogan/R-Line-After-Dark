@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1268211518" Language="SFX" Hash="265429653">
+		<SoundBank Id="1268211518" Language="SFX" Hash="3318176362">
 			<ObjectPath>\SoundBanks\Default Work Unit\NoteHighway</ObjectPath>
 			<ShortName>NoteHighway</ShortName>
 			<Path>NoteHighway.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4251951826" Name="EricTrack1" ObjectPath="\Events\Default Work Unit\EricTrack1" DurationType="OneShot" DurationMin="91.863144" DurationMax="91.863144">
+				<Event Id="4251951826" Name="EricTrack1" ObjectPath="\Events\Default Work Unit\EricTrack1" DurationType="OneShot" DurationMin="91.862755" DurationMax="91.862755">
 					<IncludedMemoryFiles>
 						<File Id="941087062" Language="SFX">
 							<ShortName>track 1 125bpm no kick.wav</ShortName>
@@ -24,7 +24,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4251951825" Name="EricTrack2" ObjectPath="\Events\Default Work Unit\EricTrack2" DurationType="OneShot" DurationMin="104.607140" DurationMax="104.607140">
+				<Event Id="4251951825" Name="EricTrack2" ObjectPath="\Events\Default Work Unit\EricTrack2" DurationType="OneShot" DurationMin="104.647957" DurationMax="104.647957">
 					<IncludedMemoryFiles>
 						<File Id="460615611" Language="SFX">
 							<ShortName>track 2 100bpm no kick.wav</ShortName>
@@ -32,7 +32,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4251951824" Name="EricTrack3" ObjectPath="\Events\Default Work Unit\EricTrack3" DurationType="OneShot" DurationMin="134.489288" DurationMax="134.489288">
+				<Event Id="4251951824" Name="EricTrack3" ObjectPath="\Events\Default Work Unit\EricTrack3" DurationType="OneShot" DurationMin="130.783356" DurationMax="130.783356">
 					<IncludedMemoryFiles>
 						<File Id="700034714" Language="SFX">
 							<ShortName>track 3 130bpm no kick.wav</ShortName>
@@ -40,7 +40,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4251951831" Name="EricTrack4" ObjectPath="\Events\Default Work Unit\EricTrack4" DurationType="OneShot" DurationMin="120.568787" DurationMax="120.568787">
+				<Event Id="4251951831" Name="EricTrack4" ObjectPath="\Events\Default Work Unit\EricTrack4" DurationType="OneShot" DurationMin="118.290352" DurationMax="118.290352">
 					<IncludedMemoryFiles>
 						<File Id="30859981" Language="SFX">
 							<ShortName>track 4 135bpm no kick.wav</ShortName>

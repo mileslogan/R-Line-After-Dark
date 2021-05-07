@@ -21,24 +21,24 @@ public class PersonSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!timerStarted && myRenderer.enabled && !pauseTimer)
-        {
-            timer = offset * RhythmHeckinWwiseSync.secondsPerBeat;
-            timerStarted = true;
-        }
-        else if(timerStarted && myRenderer.enabled && !pauseTimer)
-        {
-            timer -= Time.deltaTime;
-            if(timer <= 0)
-            {
-                myRenderer.enabled = false;
-            }
-        }
+        //if(!timerStarted && myRenderer.enabled && !pauseTimer)
+        //{
+        //    timer = offset * RhythmHeckinWwiseSync.secondsPerBeat;
+        //    timerStarted = true;
+        //}
+        //else if(timerStarted && myRenderer.enabled && !pauseTimer)
+        //{
+        //    timer -= Time.deltaTime;
+        //    if(timer <= 0)
+        //    {
+        //        myRenderer.enabled = false;
+        //    }
+        //}
 
-        if (!myRenderer.enabled)
-        {
-            timerStarted = false;
-        }
+        //if (!myRenderer.enabled)
+        //{
+        //    timerStarted = false;
+        //}
     }
 
     public IEnumerator PersonFade(bool fadeIn, Sprite updatedSprite)
@@ -47,7 +47,7 @@ public class PersonSprite : MonoBehaviour
 
         if (fadeIn)
         {
-            myRenderer.enabled = true;
+            //myRenderer.enabled = true;
             myAnimator.SetBool("In", true);
             yield return new WaitUntil(() => myRenderer.color.a == 1);
         }
@@ -56,7 +56,7 @@ public class PersonSprite : MonoBehaviour
             pauseTimer = true;
             myAnimator.SetBool("In", false);
             yield return new WaitUntil(() => myRenderer.color.a == 0);
-            myRenderer.enabled = false;
+            //myRenderer.enabled = false;
             pauseTimer = false;
         }
     }
