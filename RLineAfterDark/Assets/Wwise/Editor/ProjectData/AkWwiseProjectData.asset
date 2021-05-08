@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
@@ -23,7 +23,7 @@ MonoBehaviour:
     m_lastTime: -8585830187394775808
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
@@ -40,7 +40,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      Path: Default Work Unit\Master Audio Bus
+      Path: Default Work Unit/Master Audio Bus
     - name: Music
       guid: a65aa9d8f6c23e4d9265f404152b256a
       id: 3991942870
@@ -51,16 +51,16 @@ MonoBehaviour:
         ObjectType: 2
       - ElementName: Music
         ObjectType: 2
-      Path: Default Work Unit\Master Audio Bus\Music
+      Path: Default Work Unit/Master Audio Bus/Music
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 1d163824c600e64381ba4536edf3c11d
     GuidInternal: 
-    m_lastTime: -8585816140416452908
+    m_lastTime: -8585817818354775808
     List:
     - name: NoteHighway
       guid: 8b61833c15511c4fa063f43a7b6f644d
@@ -70,16 +70,16 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: NoteHighway
         ObjectType: 7
-      Path: Default Work Unit\NoteHighway
+      Path: Default Work Unit/NoteHighway
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 6de5eaaec14eeb48818adbb4695ce2e1
     GuidInternal: 
-    m_lastTime: -8585816140416502768
+    m_lastTime: -8585817818354775808
     List:
     - name: EricTrack1
       guid: 58dc4df916e4574fb0bad0a5121d951e
@@ -89,10 +89,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack1
         ObjectType: 3
-      Path: Default Work Unit\EricTrack1
+      Path: Default Work Unit/EricTrack1
       maxAttenuation: 0
-      maxDuration: 91.862755
-      minDuration: 91.862755
+      maxDuration: -1
+      minDuration: -1
     - name: EricTrack2
       guid: 822f7634e1682049abcb775a81f4c222
       id: 4251951825
@@ -101,10 +101,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack2
         ObjectType: 3
-      Path: Default Work Unit\EricTrack2
+      Path: Default Work Unit/EricTrack2
       maxAttenuation: 0
-      maxDuration: 104.64796
-      minDuration: 104.64796
+      maxDuration: -1
+      minDuration: -1
     - name: EricTrack3
       guid: f4a51525f1b3e24b97ddd268c0d53015
       id: 4251951824
@@ -113,10 +113,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack3
         ObjectType: 3
-      Path: Default Work Unit\EricTrack3
+      Path: Default Work Unit/EricTrack3
       maxAttenuation: 0
-      maxDuration: 130.78336
-      minDuration: 130.78336
+      maxDuration: -1
+      minDuration: -1
     - name: EricTrack4
       guid: 8e27fdb76158ad4ab38228a91a2d92b2
       id: 4251951831
@@ -125,10 +125,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack4
         ObjectType: 3
-      Path: Default Work Unit\EricTrack4
+      Path: Default Work Unit/EricTrack4
       maxAttenuation: 0
-      maxDuration: 118.29035
-      minDuration: 118.29035
+      maxDuration: -1
+      minDuration: -1
     - name: FallSound
       guid: f7f8447185d2be42b387c4d54e3e99d0
       id: 1221274415
@@ -137,10 +137,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: FallSound
         ObjectType: 3
-      Path: Default Work Unit\FallSound
+      Path: Default Work Unit/FallSound
       maxAttenuation: 0
-      maxDuration: 0.795488
-      minDuration: 0.795488
+      maxDuration: -1
+      minDuration: -1
     - name: GoodKickEvent
       guid: 2956ed34525da044a21443a3aa04a07d
       id: 1569552688
@@ -149,10 +149,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: GoodKickEvent
         ObjectType: 3
-      Path: Default Work Unit\GoodKickEvent
+      Path: Default Work Unit/GoodKickEvent
       maxAttenuation: 0
-      maxDuration: 0.170444
-      minDuration: 0.170444
+      maxDuration: -1
+      minDuration: -1
     - name: JumpSound
       guid: 6771bbd01f15f24684cd29fd83ec2d38
       id: 1000191198
@@ -161,10 +161,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: JumpSound
         ObjectType: 3
-      Path: Default Work Unit\JumpSound
+      Path: Default Work Unit/JumpSound
       maxAttenuation: 0
-      maxDuration: 0.139864
-      minDuration: 0.139864
+      maxDuration: -1
+      minDuration: -1
     - name: MissKick
       guid: 7a7535a4e2ae5f45a34ae64d371330e9
       id: 228198707
@@ -173,10 +173,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MissKick
         ObjectType: 3
-      Path: Default Work Unit\MissKick
+      Path: Default Work Unit/MissKick
       maxAttenuation: 0
-      maxDuration: 0.282771
-      minDuration: 0.282771
+      maxDuration: -1
+      minDuration: -1
     - name: PlayNoteHighwayMusic
       guid: 2a19300163863b46ba1534143ce01472
       id: 377537405
@@ -185,10 +185,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: PlayNoteHighwayMusic
         ObjectType: 3
-      Path: Default Work Unit\PlayNoteHighwayMusic
+      Path: Default Work Unit/PlayNoteHighwayMusic
       maxAttenuation: 0
-      maxDuration: 135.13794
-      minDuration: 135.13794
+      maxDuration: -1
+      minDuration: -1
     - name: PlayRhythmHeckinMusic
       guid: 5aaecd7df634f54ea99afa17e316a3c0
       id: 2897602606
@@ -197,10 +197,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: PlayRhythmHeckinMusic
         ObjectType: 3
-      Path: Default Work Unit\PlayRhythmHeckinMusic
+      Path: Default Work Unit/PlayRhythmHeckinMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StopNoteHighwayMusic
       guid: 8a022565b158ef4193f049886f0fd62f
       id: 3188186427
@@ -209,10 +209,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: StopNoteHighwayMusic
         ObjectType: 3
-      Path: Default Work Unit\StopNoteHighwayMusic
+      Path: Default Work Unit/StopNoteHighwayMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StopRhythmHeckinMusic
       guid: 22fc882e7228d94e810eecba48e06a06
       id: 3304723600
@@ -221,10 +221,10 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: StopRhythmHeckinMusic
         ObjectType: 3
-      Path: Default Work Unit\StopRhythmHeckinMusic
+      Path: Default Work Unit/StopRhythmHeckinMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UserKick
       guid: 4b6e6e3b320e624d8854feec711992b5
       id: 437249198
@@ -233,12 +233,12 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: UserKick
         ObjectType: 3
-      Path: Default Work Unit\UserKick
+      Path: Default Work Unit/UserKick
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
@@ -255,9 +255,9 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MusicMeter
         ObjectType: 13
-      Path: Default Work Unit\MusicMeter
+      Path: Default Work Unit/MusicMeter
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
@@ -267,7 +267,7 @@ MonoBehaviour:
     m_lastTime: -8585830187394775808
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
@@ -277,7 +277,7 @@ MonoBehaviour:
     m_lastTime: -8585830187394775808
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
