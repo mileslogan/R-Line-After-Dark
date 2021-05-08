@@ -48,7 +48,6 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
     public IEnumerator LoadAndStartSong(float waitingTime = 5f)
     {
         yield return new WaitForSeconds(waitingTime);
-        gameSceneManager.Loaded();
         playingID = rhythmHeckinEvent.Post(gameObject, (uint)(AkCallbackType.AK_MusicSyncAll | AkCallbackType.AK_EnableGetMusicPlayPosition), MusicCallbackFunction);
     }
 

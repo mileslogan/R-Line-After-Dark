@@ -26,10 +26,12 @@ public class TutorialHandler : MonoBehaviour
     [SerializeField] RhythmHeckinWwiseSync wwiseSync;
     bool canShowText;
     GameManager gm;
+    ObstacleMove train;
 
     // Start is called before the first frame update
     void Awake()
     {
+        train = FindObjectOfType<ObstacleMove>();
         ShowText();
         _text.text = tutorialText[currentLine];
         gm = FindObjectOfType<GameManager>();
@@ -54,6 +56,7 @@ public class TutorialHandler : MonoBehaviour
         _text.gameObject.SetActive(true);
         textbox.gameObject.SetActive(true);
         wwiseSync.StopSong();
+        train.StopTrain();
         canShowText = true;
         anim.Play("show");
     }

@@ -71,6 +71,11 @@ public class ObstacleMove : MonoBehaviour {
 		
 	}
 
+	public void StopTrain()
+	{
+		songStarted = false;
+	}
+
 	void ChangeDirections(Vector3 newDestination, float beatsToNewDestination) {
 		direction = newDestination - transform.position;
 		speed = direction.magnitude / (beatsToNewDestination * (RhythmHeckinWwiseSync.secondsPerBeat));
@@ -101,9 +106,11 @@ public class ObstacleMove : MonoBehaviour {
 
 		songStarted = true;
 	}
-
+	// don't move train till songStart marker from wwise and when it ends keep train in place too
 	public void UpdateStop()
     {
+		if (!songStarted) return;
+
 		Debug.Log("Updating Stop");
 		currentStop += 1;
 		if (currentStop >= stops.Length)

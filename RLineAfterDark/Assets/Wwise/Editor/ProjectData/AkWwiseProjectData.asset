@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 4324d4c9d8f602488bee23fb3f09b88f
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585830187394775808
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 4a857d6160b36442a9fd7563999d440c
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585830187394775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -40,7 +40,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      Path: Default Work Unit/Master Audio Bus
+      Path: Default Work Unit\Master Audio Bus
     - name: Music
       guid: a65aa9d8f6c23e4d9265f404152b256a
       id: 3991942870
@@ -51,16 +51,16 @@ MonoBehaviour:
         ObjectType: 2
       - ElementName: Music
         ObjectType: 2
-      Path: Default Work Unit/Master Audio Bus/Music
+      Path: Default Work Unit\Master Audio Bus\Music
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 1d163824c600e64381ba4536edf3c11d
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585816140416452908
     List:
     - name: NoteHighway
       guid: 8b61833c15511c4fa063f43a7b6f644d
@@ -70,16 +70,16 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: NoteHighway
         ObjectType: 7
-      Path: Default Work Unit/NoteHighway
+      Path: Default Work Unit\NoteHighway
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 6de5eaaec14eeb48818adbb4695ce2e1
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585816140416502768
     List:
     - name: EricTrack1
       guid: 58dc4df916e4574fb0bad0a5121d951e
@@ -89,7 +89,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack1
         ObjectType: 3
-      Path: Default Work Unit/EricTrack1
+      Path: Default Work Unit\EricTrack1
       maxAttenuation: 0
       maxDuration: 91.862755
       minDuration: 91.862755
@@ -101,7 +101,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack2
         ObjectType: 3
-      Path: Default Work Unit/EricTrack2
+      Path: Default Work Unit\EricTrack2
       maxAttenuation: 0
       maxDuration: 104.64796
       minDuration: 104.64796
@@ -113,7 +113,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack3
         ObjectType: 3
-      Path: Default Work Unit/EricTrack3
+      Path: Default Work Unit\EricTrack3
       maxAttenuation: 0
       maxDuration: 130.78336
       minDuration: 130.78336
@@ -125,7 +125,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: EricTrack4
         ObjectType: 3
-      Path: Default Work Unit/EricTrack4
+      Path: Default Work Unit\EricTrack4
       maxAttenuation: 0
       maxDuration: 118.29035
       minDuration: 118.29035
@@ -137,7 +137,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: FallSound
         ObjectType: 3
-      Path: Default Work Unit/FallSound
+      Path: Default Work Unit\FallSound
       maxAttenuation: 0
       maxDuration: 0.795488
       minDuration: 0.795488
@@ -149,7 +149,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: GoodKickEvent
         ObjectType: 3
-      Path: Default Work Unit/GoodKickEvent
+      Path: Default Work Unit\GoodKickEvent
       maxAttenuation: 0
       maxDuration: 0.170444
       minDuration: 0.170444
@@ -161,7 +161,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: JumpSound
         ObjectType: 3
-      Path: Default Work Unit/JumpSound
+      Path: Default Work Unit\JumpSound
       maxAttenuation: 0
       maxDuration: 0.139864
       minDuration: 0.139864
@@ -173,7 +173,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MissKick
         ObjectType: 3
-      Path: Default Work Unit/MissKick
+      Path: Default Work Unit\MissKick
       maxAttenuation: 0
       maxDuration: 0.282771
       minDuration: 0.282771
@@ -185,7 +185,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: PlayNoteHighwayMusic
         ObjectType: 3
-      Path: Default Work Unit/PlayNoteHighwayMusic
+      Path: Default Work Unit\PlayNoteHighwayMusic
       maxAttenuation: 0
       maxDuration: 135.13794
       minDuration: 135.13794
@@ -197,7 +197,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: PlayRhythmHeckinMusic
         ObjectType: 3
-      Path: Default Work Unit/PlayRhythmHeckinMusic
+      Path: Default Work Unit\PlayRhythmHeckinMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: StopNoteHighwayMusic
         ObjectType: 3
-      Path: Default Work Unit/StopNoteHighwayMusic
+      Path: Default Work Unit\StopNoteHighwayMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: StopRhythmHeckinMusic
         ObjectType: 3
-      Path: Default Work Unit/StopRhythmHeckinMusic
+      Path: Default Work Unit\StopRhythmHeckinMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -233,19 +233,19 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: UserKick
         ObjectType: 3
-      Path: Default Work Unit/UserKick
+      Path: Default Work Unit\UserKick
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: be950a66f6e4d44ab093fa9e3b67e008
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585830187394775808
     List:
     - name: MusicMeter
       guid: cf4ef2cd51cf57419f4d0120e6943486
@@ -255,36 +255,36 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: MusicMeter
         ObjectType: 13
-      Path: Default Work Unit/MusicMeter
+      Path: Default Work Unit\MusicMeter
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 1e57b0a9c2949444ae349d22293f0e19
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585830187394775808
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 974c2d5a3bdbcb45bb7a55ff6a0445e3
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585830187394775808
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
     guid: 4ce5279378003a4885ac301f2b989854
     GuidInternal: 
-    m_lastTime: -8585815514084775808
+    m_lastTime: -8585830187394775808
     List: []
   ExpandedItems:
   - /RhythmGameTemplate_WwiseProject

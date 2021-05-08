@@ -53,7 +53,7 @@ public class PersonToggle : MonoBehaviour
 
     public int Currentcombo { get => currentcombo; set => currentcombo = value; }
 
-
+   // KeyCode currentKey;
 
     // Start is called before the first frame update
     void Start()
@@ -119,13 +119,28 @@ public class PersonToggle : MonoBehaviour
                     //passengerQueue.Dequeue();
                     passengerList.Remove(nextPerson);
                 }
+              //  currentKey = KeyCode.None;
             }
 
-            if(currentTime > nextPerson.windowEnd)
+           /* if (CheckForWrongInput(currentKey,correctInput))
+            {
+                if (nextPerson.perfWindowStart < currentTime && nextPerson.perfWindowEnd > currentTime
+                    || nextPerson.windowStart < currentTime && nextPerson.windowEnd > currentTime )
+                {
+                    BadPress(true, nextPerson.timing);
+                    Debug.Log("Wrong Button!" + currentKey);
+                    TogglePerson(nextPerson.personIndex, false, 7);
+                    //passengerQueue.Dequeue();
+                    currentKey = KeyCode.None;
+                    passengerList.Remove(nextPerson);
+                }
+               
+            }*/
+
+            if (currentTime > nextPerson.windowEnd)
             {
                 BadPress(false, nextPerson.timing);
                 Debug.Log("Too Late!!!");
-                Debug.Log(nextPerson.personIndex.ToString());
                 TogglePerson(nextPerson.personIndex, false, 7);
                 //passengerQueue.Dequeue();
                 passengerList.Remove(nextPerson);
@@ -142,13 +157,37 @@ public class PersonToggle : MonoBehaviour
         }
     }
 
+    bool CheckForWrongInput(KeyCode k, KeyCode correct) // checking if the button you pressed was incorrect based on your chosen input 
+    {
+        if (k == correct && k != KeyCode.None)
+            return false;
+
+        foreach (KeyCode input in GameManager.inputs)
+        {
+            if (k == input)
+                return true;
+        }
+
+
+        return false;
+    }
+
+/*    void OnGUI()
+    { 
+        if (Event.current.keyCode != KeyCode.None && currentKey == KeyCode.None) 
+        { 
+            currentKey = Event.current.keyCode;
+            Debug.Log("current key press " + currentKey.ToString());
+        } 
+    }*/
+
     public void TogglePerson(int person, bool on, int pickup)
     {
         //people[person].sprite = personSprites[pickup];
         //people[person].enabled = on;
         IEnumerator coroutine;
 
-        if(pickup < 5)
+        if (pickup < 5)
         {
             coroutine = peopleScript[person].PersonFade(on, personSprites[pickup]);
         }
@@ -156,7 +195,7 @@ public class PersonToggle : MonoBehaviour
         {
             coroutine = peopleScript[person].PersonFade(on, feedbackSprite[pickup - 5]);
         }
-        
+
         peopleScript[person].StartCoroutine(coroutine);
 
 
