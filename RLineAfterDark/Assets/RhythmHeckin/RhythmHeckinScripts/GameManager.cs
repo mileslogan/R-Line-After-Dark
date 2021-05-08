@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public static int[] trackOneHighScores, trackTwoHighScores, trackThreeHighScores;
     public static string[] trackNames;
     public static int recentScore;
+    public static int[] hits = new int[4];
 
     private void Awake()
     {
