@@ -60,7 +60,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1d163824c600e64381ba4536edf3c11d
     GuidInternal: 
-    m_lastTime: -8585817818354775808
+    m_lastTime: -8585810944324775808
     List:
     - name: NoteHighway
       guid: 8b61833c15511c4fa063f43a7b6f644d
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6de5eaaec14eeb48818adbb4695ce2e1
     GuidInternal: 
-    m_lastTime: -8585817818354775808
+    m_lastTime: -8585810944354775808
     List:
     - name: EricTrack1
       guid: 58dc4df916e4574fb0bad0a5121d951e
@@ -91,8 +91,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/EricTrack1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 91.862755
+      minDuration: 91.862755
     - name: EricTrack2
       guid: 822f7634e1682049abcb775a81f4c222
       id: 4251951825
@@ -103,8 +103,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/EricTrack2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 104.647064
+      minDuration: 104.647064
     - name: EricTrack3
       guid: f4a51525f1b3e24b97ddd268c0d53015
       id: 4251951824
@@ -115,8 +115,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/EricTrack3
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 130.78336
+      minDuration: 130.78336
     - name: EricTrack4
       guid: 8e27fdb76158ad4ab38228a91a2d92b2
       id: 4251951831
@@ -127,8 +127,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/EricTrack4
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 118.29035
+      minDuration: 118.29035
     - name: FallSound
       guid: f7f8447185d2be42b387c4d54e3e99d0
       id: 1221274415
@@ -139,8 +139,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/FallSound
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.795488
+      minDuration: 0.795488
     - name: GoodKickEvent
       guid: 2956ed34525da044a21443a3aa04a07d
       id: 1569552688
@@ -151,8 +151,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/GoodKickEvent
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.170444
+      minDuration: 0.170444
     - name: JumpSound
       guid: 6771bbd01f15f24684cd29fd83ec2d38
       id: 1000191198
@@ -163,8 +163,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/JumpSound
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.139864
+      minDuration: 0.139864
     - name: MissKick
       guid: 7a7535a4e2ae5f45a34ae64d371330e9
       id: 228198707
@@ -175,8 +175,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/MissKick
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.282771
+      minDuration: 0.282771
     - name: PlayNoteHighwayMusic
       guid: 2a19300163863b46ba1534143ce01472
       id: 377537405
@@ -187,8 +187,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/PlayNoteHighwayMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 135.13794
+      minDuration: 135.13794
     - name: PlayRhythmHeckinMusic
       guid: 5aaecd7df634f54ea99afa17e316a3c0
       id: 2897602606
@@ -199,8 +199,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/PlayRhythmHeckinMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StopNoteHighwayMusic
       guid: 8a022565b158ef4193f049886f0fd62f
       id: 3188186427
@@ -211,8 +211,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/StopNoteHighwayMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StopRhythmHeckinMusic
       guid: 22fc882e7228d94e810eecba48e06a06
       id: 3304723600
@@ -223,8 +223,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/StopRhythmHeckinMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UserKick
       guid: 4b6e6e3b320e624d8854feec711992b5
       id: 437249198
@@ -235,8 +235,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/UserKick
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1
+      minDuration: 1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
