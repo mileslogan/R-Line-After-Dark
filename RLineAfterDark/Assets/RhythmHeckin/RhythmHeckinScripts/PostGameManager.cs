@@ -24,10 +24,12 @@ public class PostGameManager : MonoBehaviour
 
     int[] finalHits = new int[5];
 
-    public SpriteRenderer fadeObject;
+    public Image fadeObject;
 
     bool textFadeActive;
     bool textFadeStarted;
+
+    bool highScoreAchieved;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,7 @@ public class PostGameManager : MonoBehaviour
 
         if(GameManager.recentScore > PlayerPrefs.GetInt(GameManager.trackNum.ToString() + GameManager.gameMode.ToString() + "hs"))
         {
+            highScoreAchieved = true;
             PlayerPrefs.SetInt(GameManager.trackNum.ToString() + GameManager.gameMode.ToString() + "hs", GameManager.recentScore);
             newHighScore.SetActive(true);
             PlayerPrefs.Save();
@@ -71,6 +74,7 @@ public class PostGameManager : MonoBehaviour
         }
         else
         {
+            highScoreAchieved = false;
             newHighScore.SetActive(false);
             highScoreText.text = PlayerPrefs.GetInt(GameManager.trackNum.ToString() + GameManager.gameMode.ToString() + "hs").ToString();
         }
@@ -114,10 +118,17 @@ public class PostGameManager : MonoBehaviour
             else
             {
                 StopAllCoroutines();
-                foreach (Animator anim in textAnimators)
+                for(int i = 0; i < textAnimators.Length; i++)
                 {
-                    anim.SetBool("In", false);
-                    anim.Play("Idle");
+                    if(i == 9 && !highScoreAchieved)
+                    {
+
+                    }
+                    else
+                    {
+                        textAnimators[i].SetBool("In", false);
+                        textAnimators[i].Play("SkipFade");
+                    }
                 }
                 foreach (Text text in hitText)
                 {
@@ -127,7 +138,7 @@ public class PostGameManager : MonoBehaviour
                 highScoreText.color = white;
                 scoreWords.color = white;
                 highScoreWords.color = white;
-                if (newHighScore.activeInHierarchy)
+                if (highScoreAchieved)
                 {
                     newHighScoreText.color = white;
                 }

@@ -56,6 +56,9 @@ public class PersonToggle : MonoBehaviour
     int[] noteHits = new int[5];
     int maxCombo;
 
+    public ParticleSystem reactiveParticles;
+    ParticleSystem.EmissionModule reactiveEmission;
+
    // KeyCode currentKey;
 
     // Start is called before the first frame update
@@ -74,6 +77,7 @@ public class PersonToggle : MonoBehaviour
         comboText.text = "Combo: " + currentcombo;
         missedTime = Mathf.RoundToInt((RhythmHeckinWwiseSync.secondsPerBeat * 1000));
         currentRoute.text = GameManager.trackNames[GameManager.trackNum];
+        reactiveEmission = reactiveParticles.emission;
         UpdateSprites();
     }
 
@@ -170,6 +174,8 @@ public class PersonToggle : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
+        reactiveEmission.rateOverTime = new ParticleSystem.MinMaxCurve(currentcombo, currentcombo * 2);
     }
 
     bool CheckForWrongInput(KeyCode k, KeyCode correct) // checking if the button you pressed was incorrect based on your chosen input 
@@ -265,11 +271,6 @@ public class PersonToggle : MonoBehaviour
         if (playSound)
         {
             missSound.Post(gameObject);
-        }
-        if(GameManager.gameMode == 1)
-        {
-            Tinylytics.AnalyticsManager.LogCustomMetric("NoteLost", noteMissed.ToString());
-            Tinylytics.AnalyticsManager.LogCustomMetric("ComboLost", currentcombo.ToString());
         }
         currentcombo = 0;
         currentPerfCombo = 0;
