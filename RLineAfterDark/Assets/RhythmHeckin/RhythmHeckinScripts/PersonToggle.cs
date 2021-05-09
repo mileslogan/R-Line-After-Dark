@@ -76,6 +76,7 @@ public class PersonToggle : MonoBehaviour
 
     public void ShowLoadingScreen()
     {
+        scoreObject.SetActive(false); comboObject.SetActive(false);
         loadingObject.SetActive(true);
         score = 0;
         currentcombo = 0;
