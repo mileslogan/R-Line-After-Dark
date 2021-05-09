@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -970,6 +970,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3642862407255106337, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.curve.scalar
+      value: 0.87266463
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407255106337, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.x.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407255106337, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.y.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407255106337, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.curve.minScalar
+      value: 0.34906584
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407255106337, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.curve.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407255106342, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98650a533ac6546e58e1c58b0817fd17, type: 2}
+    - target: {fileID: 3642862407255106342, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98650a533ac6546e58e1c58b0817fd17, type: 2}
+    - target: {fileID: 3642862407318429954, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.curve.scalar
+      value: 0.87266463
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407318429954, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.x.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407318429954, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.y.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407318429954, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.curve.minScalar
+      value: 0.34906584
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407318429954, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: RotationModule.curve.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642862407318429955, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98650a533ac6546e58e1c58b0817fd17, type: 2}
+    - target: {fileID: 3642862407318429955, guid: 78241ae85e96d435ca43eef6077f94e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98650a533ac6546e58e1c58b0817fd17, type: 2}
     - target: {fileID: 3642862407835142304, guid: 78241ae85e96d435ca43eef6077f94e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -2711,6 +2781,10 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d18653830d66444e9bfeb85c58dd3ca3,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0931d6f67e4404d1897d89a2f2bf283a,
       type: 2}
   modeOnePrimary: 7a0000007a0000007a0000007a0000007a000000
   modeOneSecondary: 2000000020000000200000002000000020000000

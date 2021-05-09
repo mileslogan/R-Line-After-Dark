@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public KeyCode[] modeOnePrimary, modeOneSecondary, modeTwoPrimary, modeTwoSecondary, modeThreePrimary, modeThreeSecondary;
     public static Sprite[] sprites;
     public Sprite[] modeOne, modeTwo;
-    public static int[] trackOneHighScores, trackTwoHighScores, trackThreeHighScores;
+    public static int[] trackOneHighScores, trackTwoHighScores, trackThreeHighScores, trackFourHighScores;
     public static string[] trackNames;
     public static int recentScore;
     public static int[] hits = new int[5];
@@ -42,28 +42,29 @@ public class GameManager : MonoBehaviour
         inputs = modeOnePrimary;
         sprites = modeOne;
 
-        trackNames = new string[3];
+        trackNames = new string[4];
         trackNames[0] = "L to Canarsie";
         trackNames[1] = "6 to Brooklyn Bridge";
         trackNames[2] = "J to Jamaica Center";
+        trackNames[3] = "2 to Flatbush Ave";
 
-        trackOneHighScores = new int[3]; trackTwoHighScores = new int[3]; trackThreeHighScores = new int[3];
+        trackOneHighScores = new int[3]; trackTwoHighScores = new int[3]; trackThreeHighScores = new int[3]; trackFourHighScores = new int[3];
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < tracks.Length; i++)
         {
-            if(!PlayerPrefs.HasKey("0" + i.ToString() + "hs"))
+            if(!PlayerPrefs.HasKey(i.ToString() + "0" + "hs"))
             {
-                PlayerPrefs.SetInt(("0" + i.ToString() + "hs"), 0);
+                PlayerPrefs.SetInt((i.ToString() + "0" + "hs"), 0);
             }
 
-            if (!PlayerPrefs.HasKey("1" + i.ToString() + "hs"))
+            if (!PlayerPrefs.HasKey(i.ToString() + "1" + "hs"))
             {
-                PlayerPrefs.SetInt(("1" + i.ToString() + "hs"), 0);
+                PlayerPrefs.SetInt((i.ToString() + "1" + "hs"), 0);
             }
 
-            if (!PlayerPrefs.HasKey("2" + i.ToString() + "hs"))
+            if (!PlayerPrefs.HasKey(i.ToString() + "2" + "hs"))
             {
-                PlayerPrefs.SetInt(("2" + i.ToString() + "hs"), 0);
+                PlayerPrefs.SetInt((i.ToString() + "2" + "hs"), 0);
             }
         }
 
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour
             trackOneHighScores[i] = PlayerPrefs.GetInt("0" + i.ToString() + "hs");
             trackTwoHighScores[i] = PlayerPrefs.GetInt("1" + i.ToString() + "hs");
             trackThreeHighScores[i] = PlayerPrefs.GetInt("2" + i.ToString() + "hs");
+            trackFourHighScores[i] = PlayerPrefs.GetInt("3" + i.ToString() + "hs");
         }
             
 

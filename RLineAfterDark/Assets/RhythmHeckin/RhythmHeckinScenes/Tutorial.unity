@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9674,6 +9674,10 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d18653830d66444e9bfeb85c58dd3ca3,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0931d6f67e4404d1897d89a2f2bf283a,
       type: 2}
   modeOnePrimary: 7a0000007a0000007a0000007a0000007a000000
   modeOneSecondary: 2000000020000000200000002000000020000000
@@ -76241,6 +76245,7 @@ MonoBehaviour:
   circleObject: {fileID: 1508274295}
   inicatorObject: {fileID: 1152900851}
   loadingObject: {fileID: 1806442386}
+  reactiveParticles: {fileID: 0}
 --- !u!4 &1791799883
 Transform:
   m_ObjectHideFlags: 0

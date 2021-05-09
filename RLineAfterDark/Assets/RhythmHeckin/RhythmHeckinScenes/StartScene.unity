@@ -1889,6 +1889,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d18653830d66444e9bfeb85c58dd3ca3,
       type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0931d6f67e4404d1897d89a2f2bf283a,
+      type: 2}
   modeOnePrimary: 7a0000007a0000007a0000007a0000007a000000
   modeOneSecondary: 2000000020000000200000002000000020000000
   modeTwoPrimary: 7a00000078000000780000007800000078000000
