@@ -10,6 +10,12 @@ public class SongSelectManager : MonoBehaviour
 
     public Text[] modeSpecificText, trackSpecificText;
 
+    public Text highScoreDisplay;
+    public Text controlSchemeDisplay;
+
+    [TextArea(2, 5)]
+    public string[] primaryControls, secondaryControls;
+
     [Header("Start+Back")]
     public Text startText, backText;
 
@@ -306,5 +312,41 @@ public class SongSelectManager : MonoBehaviour
                
             }
         }
+
+        HighScoreUpdate();
+        ControlSchemeUpdate();
+    }
+
+    void HighScoreUpdate()
+    {
+        switch (trackSelect)
+        {
+            case 0:
+                highScoreDisplay.text = "High Score: " + GameManager.trackOneHighScores[modeSelect];
+                break;
+            case 1:
+                highScoreDisplay.text = "High Score: " + GameManager.trackTwoHighScores[modeSelect];
+                break;
+            case 2:
+                highScoreDisplay.text = "High Score: " + GameManager.trackThreeHighScores[modeSelect];
+                break;
+            case 3:
+                highScoreDisplay.text = "High Score: " + GameManager.trackFourHighScores[modeSelect];
+                break;
+
+        }
+    }
+
+    void ControlSchemeUpdate()
+    {
+        if (GameManager.primaryInput)
+        {
+            controlSchemeDisplay.text = primaryControls[modeSelect];
+        }
+        else
+        {
+            controlSchemeDisplay.text = secondaryControls[modeSelect];
+        }
+        
     }
 }
