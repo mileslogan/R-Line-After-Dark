@@ -21,6 +21,11 @@ public class SongSelectManager : MonoBehaviour
 
     bool startSelect;
 
+    [SerializeField] string[] modeAnims;
+    [SerializeField] string[] trackAnims;
+    [SerializeField] Animator modeAnim, trackAnim;
+    int trackNum, modeNum; // for the animator. very hacky sorry abt this - Geneva
+
     GameManager bigManager;
     AudioSource clicker;
 
@@ -107,6 +112,8 @@ public class SongSelectManager : MonoBehaviour
 
     void UpdateText(int dir)
     {
+        int prevMode = modeSelect; // hacky gen stuff
+        int prevTrack = trackSelect;
         switch (row)
         {
             case 1:
@@ -187,6 +194,72 @@ public class SongSelectManager : MonoBehaviour
                 }
                 break;
         }
+
+
+
+
+
+
+        //hacky stuff from gen oopsies
+        if (prevMode != modeSelect)
+        {
+            if (prevMode < modeSelect)
+            {
+                if (modeSelect != 0)
+                {
+                    modeNum = modeSelect - 1;
+                    modeAnim.Play(modeAnims[modeNum]);
+                }
+
+            }
+            else
+            {
+                switch (modeSelect)
+                {
+                    case 0:
+                        modeNum = 3;
+                        modeAnim.Play(modeAnims[modeNum]);
+                        break;
+                    case 1:
+                        modeNum = 2;
+                        modeAnim.Play(modeAnims[modeNum]);
+                        break;
+                }
+            }
+        }
+
+        //hacky stuff from gen oopsies pt 2
+        if (trackSelect != prevTrack)
+        {
+            if (prevTrack < trackSelect)
+            {
+                if (trackSelect != 0)
+                {
+                    trackNum = (trackSelect - 1);
+                    trackAnim.Play(trackAnims[trackNum]);
+                }
+            }
+            else
+            {
+                switch (trackSelect)
+                {
+                    case 0:
+                        trackNum = 5;
+                        trackAnim.Play(trackAnims[trackNum]);
+                        break;
+                    case 1:
+                        trackNum = 4;
+                        trackAnim.Play(trackAnims[trackNum]);
+                        break;
+                    case 2:
+                        trackNum = 3;
+                        trackAnim.Play(trackAnims[trackNum]);
+                        break;
+                }
+            }
+
+        }
+
         if (dir == 1)
         {
             if (row == 2)
@@ -229,6 +302,8 @@ public class SongSelectManager : MonoBehaviour
                         trackSpecificText[i].color = greyedOutMore;
                     }
                 }
+
+               
             }
         }
     }
