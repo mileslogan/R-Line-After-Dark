@@ -53,6 +53,9 @@ public class PersonToggle : MonoBehaviour
 
     public int Currentcombo { get => currentcombo; set => currentcombo = value; }
 
+    int[] noteHits = new int[5];
+    int maxCombo;
+
    // KeyCode currentKey;
 
     // Start is called before the first frame update
@@ -114,6 +117,7 @@ public class PersonToggle : MonoBehaviour
                 else if (nextPerson.windowStartMissed < currentTime)
                 {
                     BadPress(true, nextPerson.timing);
+                    noteHits[2] += 1;
                     Debug.Log("Too Early!!!");
                     TogglePerson(nextPerson.personIndex, false, 7);
                     //passengerQueue.Dequeue();
@@ -140,6 +144,7 @@ public class PersonToggle : MonoBehaviour
             if (currentTime > nextPerson.windowEnd)
             {
                 BadPress(false, nextPerson.timing);
+                noteHits[3] += 1;
                 Debug.Log("Too Late!!!");
                 TogglePerson(nextPerson.personIndex, false, 7);
                 //passengerQueue.Dequeue();
@@ -228,6 +233,11 @@ public class PersonToggle : MonoBehaviour
     {
         goodSound.Post(gameObject);
         currentcombo += 1;
+        if (currentcombo > maxCombo)
+        {
+            maxCombo = currentcombo;
+        }
+        noteHits[1] += 1;
         currentPerfCombo = 0;
         score += 250 + (10 * (currentcombo - 1));
         feedbackRenderer.sprite = feedbackSprite[1];
@@ -262,6 +272,11 @@ public class PersonToggle : MonoBehaviour
     {
         perfSound.Post(gameObject);
         currentcombo += 1;
+        if(currentcombo > maxCombo)
+        {
+            maxCombo = currentcombo;
+        }
+        noteHits[0] += 1;
         currentPerfCombo += 1;
         score += 400 + (10 * (currentcombo - 1)) + (20 * (currentPerfCombo - 1));
         feedbackRenderer.sprite = feedbackSprite[0];
@@ -272,6 +287,8 @@ public class PersonToggle : MonoBehaviour
 
     public void ToPostGame()
     {
+        noteHits[4] = maxCombo;
+        GameManager.hits = noteHits;
         GameManager.recentScore = score;
         bigManager.ChangeScene(4);
     }

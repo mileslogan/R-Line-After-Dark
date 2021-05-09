@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class PostGameManager : MonoBehaviour
 {
-    public Text trackNameText, modeNameText, scoreText, backText, retryText, highScoreText;
+    public Text trackNameText, modeNameText, scoreText, backText, retryText, highScoreText, newHighScoreText, scoreWords, highScoreWords;
+
+    public Text[] hitText;
+    public Animator[] textAnimators;
 
     public string[] modeNames;
 
@@ -19,15 +22,33 @@ public class PostGameManager : MonoBehaviour
 
     public GameObject newHighScore;
 
+    int[] finalHits = new int[5];
+
+    public SpriteRenderer fadeObject;
+
+    bool textFadeActive;
+    bool textFadeStarted;
+
     // Start is called before the first frame update
     void Start()
     {
         bigManager = FindObjectOfType<GameManager>();
         clicker = GameObject.Find("Clicker").GetComponent<AudioSource>();
+        finalHits = GameManager.hits;
 
         scoreText.text = GameManager.recentScore.ToString();
-        trackNameText.text = GameManager.trackNames[GameManager.trackNum];
+        if(GameManager.trackNames != null)
+        {
+            trackNameText.text = GameManager.trackNames[GameManager.trackNum];
+        }
+        
         modeNameText.text = modeNames[GameManager.gameMode];
+
+        hitText[0].text = "Perfect: " + finalHits[0];
+        hitText[1].text = "Good: " + finalHits[1];
+        hitText[2].text = "Early: " + finalHits[2];
+        hitText[3].text = "Miss: " + finalHits[3];
+        hitText[4].text = "Max Combo: " + finalHits[4];
 
         if(GameManager.recentScore > PlayerPrefs.GetInt(GameManager.trackNum.ToString() + GameManager.gameMode.ToString() + "hs"))
         {
@@ -56,12 +77,18 @@ public class PostGameManager : MonoBehaviour
 
         UpdateText();
 
+        textFadeActive = true;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(!textFadeStarted && fadeObject.color.a == 0)
+        {
+            StartCoroutine("TextFadeIn");
+            textFadeStarted = true;
+        }
 
         if (Input.GetButtonDown("MenuLeft") || Input.GetButtonDown("MenuRight"))
         {
@@ -73,13 +100,38 @@ public class PostGameManager : MonoBehaviour
         if (Input.GetButtonDown("MenuSelect"))
         {
             clicker.Play();
-            if (backSelect)
+            if (!textFadeActive)
             {
-                bigManager.ChangeScene(1);
+                if (backSelect)
+                {
+                    bigManager.ChangeScene(1);
+                }
+                else
+                {
+                    bigManager.ToGameScene();
+                }
             }
             else
             {
-                bigManager.ToGameScene();
+                StopAllCoroutines();
+                foreach (Animator anim in textAnimators)
+                {
+                    anim.SetBool("In", false);
+                    anim.Play("Idle");
+                }
+                foreach (Text text in hitText)
+                {
+                    text.color = white;
+                }
+                scoreText.color = white;
+                highScoreText.color = white;
+                scoreWords.color = white;
+                highScoreWords.color = white;
+                if (newHighScore.activeInHierarchy)
+                {
+                    newHighScoreText.color = white;
+                }
+                textFadeActive = false;
             }
         }
     }
@@ -96,5 +148,41 @@ public class PostGameManager : MonoBehaviour
             backText.color = greyedOut;
             retryText.color = white;
         }
+    }
+
+    IEnumerator TextFadeIn()
+    {
+        textAnimators[0].SetBool("In", true);
+        yield return new WaitUntil(() => hitText[0].color.a == 1);
+
+        textAnimators[1].SetBool("In", true);
+        yield return new WaitUntil(() => hitText[1].color.a == 1);
+
+        textAnimators[2].SetBool("In", true);
+        yield return new WaitUntil(() => hitText[2].color.a == 1);
+
+        textAnimators[3].SetBool("In", true);
+        yield return new WaitUntil(() => hitText[3].color.a == 1);
+
+        textAnimators[4].SetBool("In", true);
+        yield return new WaitUntil(() => hitText[4].color.a == 1);
+
+        textAnimators[5].SetBool("In", true);
+        textAnimators[6].SetBool("In", true);
+        yield return new WaitUntil(() => scoreText.color.a == 1);
+
+        textAnimators[7].SetBool("In", true);
+        textAnimators[8].SetBool("In", true);
+        yield return new WaitUntil(() => highScoreText.color.a == 1);
+
+        if(newHighScore.activeInHierarchy == true)
+        {
+            textAnimators[9].SetBool("In", true);
+            yield return new WaitUntil(() => newHighScoreText.color.a == 1);
+        }
+
+        textFadeActive = false;
+        yield break;
+
     }
 }
