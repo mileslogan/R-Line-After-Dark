@@ -79,9 +79,8 @@ public class PostGameManager : MonoBehaviour
             highScoreText.text = PlayerPrefs.GetInt(GameManager.trackNum.ToString() + GameManager.gameMode.ToString() + "hs").ToString();
         }
 
-        UpdateText();
-
         textFadeActive = true;
+        UpdateText();
 
     }
 
@@ -103,9 +102,9 @@ public class PostGameManager : MonoBehaviour
 
         if (Input.GetButtonDown("MenuSelect"))
         {
-            clicker.Play();
             if (!textFadeActive)
             {
+                clicker.Play();
                 if (backSelect)
                 {
                     bigManager.ChangeScene(1);
@@ -143,21 +142,25 @@ public class PostGameManager : MonoBehaviour
                     newHighScoreText.color = white;
                 }
                 textFadeActive = false;
+                UpdateText();
             }
         }
     }
 
     void UpdateText()
     {
-        if (backSelect)
+        if (!textFadeActive)
         {
-            backText.color = white;
-            retryText.color = greyedOut;
-        }
-        else
-        {
-            backText.color = greyedOut;
-            retryText.color = white;
+            if (backSelect)
+            {
+                backText.color = white;
+                retryText.color = greyedOut;
+            }
+            else
+            {
+                backText.color = greyedOut;
+                retryText.color = white;
+            }
         }
     }
 
@@ -193,6 +196,7 @@ public class PostGameManager : MonoBehaviour
         }
 
         textFadeActive = false;
+        UpdateText();
         yield break;
 
     }
