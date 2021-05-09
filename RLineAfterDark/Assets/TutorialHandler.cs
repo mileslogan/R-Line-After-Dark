@@ -120,6 +120,9 @@ public class TutorialHandler : MonoBehaviour
         {
             // to the song select!!
             // StartCoroutine(FindObjectOfType<TransitionManager>().Fade(1)); // tis broke ;-;
+
+            GameManager.gameMode = 0;
+
             SceneManager.LoadScene(1);
             return;
         }

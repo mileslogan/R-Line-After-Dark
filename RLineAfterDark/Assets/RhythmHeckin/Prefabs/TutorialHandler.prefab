@@ -43,8 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e9e02f9b50bef42a49599958b7d803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   textbox: {fileID: 0}
   _text: {fileID: 0}
+  examplePerson: {fileID: 0}
+  exampleArrow: {fileID: 0}
   tutorialText:
   - Welcome to R Line After Dark!
   - In this game you'll be picking up and dropping off passengers to the music!
@@ -54,7 +57,7 @@ MonoBehaviour:
   - Nice now let's practice picking up AND dropping off passengers.
   - To drop off a passenger, press the [X] key when you see an arrow!
   - Wonderful! Now there's actually one more way to drop people off.
-  - In drop off express mode, instead of pressing [X], press WASD in the direction
+  - In drop off express mode, instead of pressing [X], press [WASD] in the direction
     the arrow is located on the track.
   - Alright let's go!
   - Terrific! That's all there is to it! You'll be a fine train driver in no time.
