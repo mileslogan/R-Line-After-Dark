@@ -11,9 +11,9 @@ public class TransitionManager : MonoBehaviour
 
     private void Awake()
     {
-        if(gameObject != enabled)
+        if(blackBox != blackBox.enabled)
         {
-            gameObject.SetActive(true);
+            blackBox.enabled = true;
         }
     }
 
