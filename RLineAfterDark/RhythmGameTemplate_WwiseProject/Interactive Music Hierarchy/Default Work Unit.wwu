@@ -1095,7 +1095,7 @@
 								<Property Name="TimeMs" Type="Real64" Value="6287.49262892146"/>
 							</PropertyList>
 						</MusicCue>
-						<MusicCue Name="Level Ended" ID="{E687098F-AA10-4189-B71D-36FBA9502AD2}">
+						<MusicCue Name="LevelEnded" ID="{E687098F-AA10-4189-B71D-36FBA9502AD2}">
 							<PropertyList>
 								<Property Name="CueType" Type="int16" Value="2"/>
 								<Property Name="TimeMs" Type="Real64" Value="104646.940238638"/>
@@ -2340,7 +2340,7 @@
 								<Property Name="TimeMs" Type="Real64" Value="9167.96342248793"/>
 							</PropertyList>
 						</MusicCue>
-						<MusicCue Name="Level Ended" ID="{1754CEFF-AAF7-483D-8628-B05F42551455}">
+						<MusicCue Name="LevelEnded" ID="{1754CEFF-AAF7-483D-8628-B05F42551455}">
 							<PropertyList>
 								<Property Name="CueType" Type="int16" Value="2"/>
 								<Property Name="TimeMs" Type="Real64" Value="130783.348037873"/>
