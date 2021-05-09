@@ -38,7 +38,7 @@ public class PersonToggle : MonoBehaviour
     public int goodWindow = 100;
     public int missedTime = 200;
 
-    public SpriteRenderer feedbackRenderer;
+    //public SpriteRenderer feedbackRenderer;
     public Sprite[] feedbackSprite;
 
     public ParticleSystem[] stationParticles;
@@ -47,7 +47,7 @@ public class PersonToggle : MonoBehaviour
 
     public AK.Wwise.Event goodSound, perfSound, missSound;
 
-    public GameObject scoreObject, comboObject, circleObject, inicatorObject, loadingObject;
+    public GameObject scoreObject, comboObject, inicatorObject, loadingObject;
 
     GameManager bigManager;
 
@@ -65,7 +65,7 @@ public class PersonToggle : MonoBehaviour
     void Start()
     {
         bigManager = FindObjectOfType<GameManager>();
-        scoreObject.SetActive(false); comboObject.SetActive(false); circleObject.SetActive(false); inicatorObject.SetActive(false);
+        scoreObject.SetActive(false); comboObject.SetActive(false); inicatorObject.SetActive(false);
         loadingObject.SetActive(true);
 
         RhythmHeckinWwiseSync.TogglePerson += TogglePerson;
@@ -168,11 +168,7 @@ public class PersonToggle : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
-        }
-        else if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(0);
+            bigManager.QuitGame();
         }
 
         reactiveEmission.rateOverTime = new ParticleSystem.MinMaxCurve(currentcombo, currentcombo * 2);
@@ -256,8 +252,8 @@ public class PersonToggle : MonoBehaviour
         noteHits[1] += 1;
         currentPerfCombo = 0;
         score += 250 + (10 * (currentcombo - 1));
-        feedbackRenderer.sprite = feedbackSprite[1];
-        feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
+        //feedbackRenderer.sprite = feedbackSprite[1];
+        //feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         scoreText.text = "Score: " + score;
         UpdateCombo();
     }
@@ -274,8 +270,8 @@ public class PersonToggle : MonoBehaviour
         }
         currentcombo = 0;
         currentPerfCombo = 0;
-        feedbackRenderer.sprite = feedbackSprite[2];
-        feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
+        //feedbackRenderer.sprite = feedbackSprite[2];
+        //feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         UpdateCombo();
     }
 
@@ -290,8 +286,8 @@ public class PersonToggle : MonoBehaviour
         noteHits[0] += 1;
         currentPerfCombo += 1;
         score += 400 + (10 * (currentcombo - 1)) + (20 * (currentPerfCombo - 1));
-        feedbackRenderer.sprite = feedbackSprite[0];
-        feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
+        //feedbackRenderer.sprite = feedbackSprite[0];
+        //feedbackRenderer.color = new Color(feedbackRenderer.color.r, feedbackRenderer.color.g, feedbackRenderer.color.b, 1f);
         scoreText.text = "Score: " + score;
         UpdateCombo();
     }
@@ -306,7 +302,7 @@ public class PersonToggle : MonoBehaviour
 
     public void Loaded()
     {
-        scoreObject.SetActive(true); comboObject.SetActive(true); circleObject.SetActive(true); inicatorObject.SetActive(true);
+        scoreObject.SetActive(true); comboObject.SetActive(true); inicatorObject.SetActive(true);
         loadingObject.SetActive(false);
     }
 
