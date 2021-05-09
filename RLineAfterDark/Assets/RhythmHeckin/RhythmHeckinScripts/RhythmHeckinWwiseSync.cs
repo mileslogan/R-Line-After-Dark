@@ -53,15 +53,15 @@ public class RhythmHeckinWwiseSync : MonoBehaviour
 
     public void SetSong(int num)
     {
-        if (overrideEvent == null)
-        {
+   /*     if (overrideEvent == null)
+        {*/
             rhythmHeckinEvent = GameManager.tracksRef[num];
-        }
+/*        }
         else
         {
             rhythmHeckinEvent = overrideEvent;
             GameManager.trackNum = 1;
-        }
+        }*/
     }
 
     public void StopSong()

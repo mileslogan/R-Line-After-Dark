@@ -77,6 +77,16 @@ public class PersonToggle : MonoBehaviour
         UpdateSprites();
     }
 
+    public void ShowLoadingScreen()
+    {
+        scoreObject.SetActive(false); comboObject.SetActive(false);
+        loadingObject.SetActive(true);
+        score = 0;
+        currentcombo = 0;
+        scoreText.text = "Score: " + score;
+        comboText.text = "Combo: " + currentcombo;
+    }
+
     public void UpdateSprites()
     {
         personSprites = GameManager.sprites;

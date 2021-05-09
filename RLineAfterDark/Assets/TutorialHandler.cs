@@ -56,6 +56,7 @@ public class TutorialHandler : MonoBehaviour
         _text.gameObject.SetActive(true);
         textbox.gameObject.SetActive(true);
         wwiseSync.StopSong();
+        wwiseSync.gameSceneManager.ShowLoadingScreen();
         train.StopTrain();
         canShowText = true;
         anim.Play("show");
