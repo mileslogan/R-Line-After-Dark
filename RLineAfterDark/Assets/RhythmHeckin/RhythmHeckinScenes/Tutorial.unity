@@ -15053,13 +15053,18 @@ PrefabInstance:
     - target: {fileID: 4355693368058697889, guid: 2f3a697a471df904e992b5136a04d797,
         type: 3}
       propertyPath: m_Text
-      value: In drop off express mode, instead of pressing [X], press WASD in the
-        direction the arrow is located on the track.
+      value: In drop off express mode, instead of pressing [X], press arrow keys
+        in the direction the arrow is located on the track.
       objectReference: {fileID: 0}
     - target: {fileID: 4355693368058697889, guid: 2f3a697a471df904e992b5136a04d797,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 15
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355693368058697889, guid: 2f3a697a471df904e992b5136a04d797,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4355693368126786243, guid: 2f3a697a471df904e992b5136a04d797,
         type: 3}
@@ -15144,7 +15149,7 @@ PrefabInstance:
     - target: {fileID: 4355693368126786243, guid: 2f3a697a471df904e992b5136a04d797,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 184
+      value: 324
       objectReference: {fileID: 0}
     - target: {fileID: 4355693368126786243, guid: 2f3a697a471df904e992b5136a04d797,
         type: 3}
