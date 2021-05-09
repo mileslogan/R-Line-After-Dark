@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/ericluo/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/R Line/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/mileslogan/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Music+Gamplay/MidtermGit/RLineAfterDark/RhythmGameTemplate_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1268211518" Language="SFX" Hash="358308043">
+		<SoundBank Id="1268211518" Language="SFX" Hash="2090968518">
 			<ObjectPath>\SoundBanks\Default Work Unit\NoteHighway</ObjectPath>
 			<ShortName>NoteHighway</ShortName>
 			<Path>NoteHighway.bnk</Path>
